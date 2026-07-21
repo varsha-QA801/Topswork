@@ -1,0 +1,171 @@
+1.
+Pick any one app you use daily (like Zomato, Instagram, or Paytm) and write a detailed test plan for its login feature, including at least these components: objective, scope, test items, features to be tested, features not to be tested, test deliverables, schedule, and responsible roles.
+
+Answer:
+Test Plan for Instagram Login Feature
+1. Objective
+   ---------
+   To check that users can log in to Instagram safely and correctly using a valid username, email, or phone number and password.
+   
+2. Scope
+   -----
+   Testing will include:
+   Login with valid username, email, or phone number
+   Login with valid and invalid password
+   Forgot Password option
+   Show/Hide password
+   Remember login
+   Error messages for wrong details
+   
+3. Test Items
+   ----------
+   Login page
+   Username/Email/Phone field
+   Password field
+   Login button
+   Forgot Password link
+   Remember login option
+   
+4. Features to be Tested
+   ---------------------
+   Successful login with correct details
+   Login failure with incorrect details
+   Empty field validation
+   Password visibility (Show/Hide)
+   Forgot Password functionality
+   Proper error messages
+   Login on different devices and browsers
+   
+5. Features Not to be Tested
+   -------------------------
+   User registration (Sign Up)
+   Instagram feed
+   Posting photos or videos
+   Chat and calling features
+   Profile editing
+   
+6. Test Deliverables
+   -----------------
+   Test Plan
+   Test Cases
+   Test Data
+   Bug Report
+   Test Summary Report
+   
+7. Schedule
+   --------
+   Test Planning – 1 Day
+   Test Case Writing – 1 Day
+   Test Execution – 2 Days
+   Bug Reporting – 1 Day
+   Final Report – 1 Day
+   
+8. Responsible Roles
+   -----------------
+   Test Manager: Approves the test plan
+   QA Tester: Creates and executes test cases
+   Developer: Fixes reported bugs
+   Project Manager: Monitors project progress
+   
+2.
+Create a mini test strategy document for the search functionality in a movie ticket booking app (like BookMyShow), specifying your approach to test levels (unit, integration, system), test types (functional, non-functional), and tools you would use.<br><br><em><strong>Hint:</strong> Mention at least one tool for each test level or type.</em>
+
+Answer:
+Mini Test Strategy – Search Functionality
+
+1. Objective
+   ---------
+   Check that the search feature works correctly.
+   Make sure users can easily find movies, cinemas, and locations.
+   
+2. Test Levels
+   -----------
+   Unit Testing: Test individual search functions.
+   Tool: JUnit
+   Integration Testing: Check communication between search, database, and API.
+   Tool: Postman
+   System Testing: Test the complete search feature in the application.
+   Tool: Selenium
+   
+3. Test Types
+   ----------
+   Functional Testing
+   Search by movie name.
+   Search by cinema name.
+   Search by city or location.
+   Show correct search results.
+   Display a message when no results are found.
+   Non-Functional Testing
+   Performance Testing: Search results should load quickly.
+   Tool: JMeter
+   Usability Testing: Search box should be simple and easy to use.
+   Compatibility Testing: Search should work on different browsers and mobile devices.
+   
+4. Test Data
+   ---------
+   Valid movie names.
+   Invalid movie names.
+   Different cities and cinema names.
+   Empty search input.
+   Special characters and numbers.
+   
+5. Entry Criteria
+   --------------
+   Search feature is developed.
+   Test environment is ready.
+   Test data is available.
+   
+6. Exit Criteria
+   -------------
+   All planned test cases are executed.
+   Critical bugs are fixed.
+   Search feature works as expected.
+
+3.
+List and explain three key differences between a test plan and a test strategy, using examples from any food delivery or e-commerce app you know.
+
+Answer:
+1. Test Plan
+   ---------
+   A Test Plan is a document that explains what will be tested, when it will be tested, who will test it, and how the testing will be managed for a specific project or feature.
+   Example (Zomato Login Feature):
+   Objective: Verify that users can log in successfully.
+   Scope: Login with mobile number, email, OTP, and password.
+   Timeline: Testing from 1st August to 5th August.
+   Team: 2 Manual Testers and 1 Automation Tester.
+   Deliverables: Test cases, defect report, and test summary report.
+
+2. Test Strategy
+   -------------
+   A Test Strategy is a high-level document that explains the overall testing approach, testing methods, test levels, test types, and tools used throughout the project.
+   Example (Amazon Shopping App):
+   Testing Approach: Manual and Automation Testing.
+   Test Levels: Unit Testing, Integration Testing, System Testing, User Acceptance Testing (UAT).
+   Test Types: Functional Testing, Regression Testing, Performance Testing, Security Testing.
+   Tools: Selenium, JIRA, Postman, JMeter.
+
+4.
+Identify at least two risks, two assumptions, and two dependencies that could affect testing the payment feature in a shopping app (like Flipkart or Myntra).
+
+Answer:
+Risks
+-----
+Payment may fail because of a network problem.
+The payment gateway may not work properly.
+
+Assumptions
+-----------
+The internet connection is working.
+The user has a valid payment method (UPI, card, or wallet).
+
+Dependencies
+------------
+The payment gateway must be connected to the app.
+The bank or payment service must be available.
+
+5.
+Given this scenario: Your team is planning to test the 'add to cart' feature in an online grocery app. Write a short paragraph describing how you would update the test plan if a new dependency (like a third-party coupon system) is introduced during the project.<br><br><em><strong>Hint:</strong> Focus on changes to scope, schedule, or deliverables.</em>
+
+Answer:
+If a new coupon system is added, I will update the test plan. I will test if the coupon works or not. I will check valid coupons, invalid coupons, and expired coupons. I will also check that Add to Cart works correctly. If more time is needed, I will change the testing schedule. I will update the test documents and tell the team about the changes.
+
