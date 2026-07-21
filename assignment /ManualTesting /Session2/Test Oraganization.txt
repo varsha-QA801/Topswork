@@ -1,0 +1,87 @@
+1.
+List 3 key responsibilities each for a Tester and a Test Leader in a software project, and give one example of how each role contributes during a release cycle.
+
+Answer:
+ (A)Tester Responsibilities:
+    ------------------------
+    Write and run test cases.
+    Find, report, and retest bugs.
+    Make sure the software works as expected.
+
+Example:
+A tester opens the shopping app, adds a mobile phone to the cart, and places an order. If the order does not complete, the tester reports the bug. After the developer fixes it, the tester checks it again.
+
+(B)Test Leader Responsibilities:
+   -----------------------------
+   Prepare the test plan and testing schedule.
+   Assign testing tasks to team members.
+   Monitor testing progress and share reports with the project team.
+
+Example:
+The Test Leader tells the testing team which features to test first, checks that all important tests are finished, and confirms the software is ready before it is released.
+
+2.
+Pick any app you use daily (Instagram, Zomato, Paytm, etc.) and write a one-paragraph comparison of how Quality Assurance (QA) and Quality Control (QC) would be performed for that app.<br><br><em><strong>Hint:</strong> Think about activities done before coding vs after coding is complete.</em>
+
+ Answer:
+(A) Quality Assurance:
+    ------------------
+    Quality Assurance (QA) is done before coding starts. The QA team understands the requirements, prepares a test plan, writes test cases, and checks that the        development process follows the correct standards.
+
+(B) Quality Contorl:
+    ----------------
+    Quality Control (QC) is done after the coding is completed. Testers use the app to check features like login, posting photos, liking posts, commenting,            messaging, and notifications. They find bugs, report them to developers, and test again after the bugs are fixed.
+ 
+3.
+Explain the difference between Testing and Debugging by describing what a tester does vs what a developer does when a bug is found in a Flipkart-style shopping cart feature.
+
+Answer:
+(A)Testing:
+   --------
+   Testing is done by the tester to check if the shopping cart feature works correctly. For example, the tester adds products to the Flipkart cart, changes the       quantity, removes items, and checks if the total price is correct. If the tester finds a problem, they report it to the developer with clear steps.
+
+(B)Debugging:
+   ----------
+   Debugging is done by the developer. The developer studies the reported bug, finds the reason in the code, fixes it, and updates the application. After the fix,    the tester tests the shopping cart again to make sure the issue is solved and no new problems have appeared.
+
+4.
+Create a basic test plan skeleton in a Word or Google Doc for a new feature in a food delivery app (like Swiggy) — include at least these sections: Test Plan ID, Feature Description, Test Scope, Roles & Responsibilities, Test Environment, and Test Deliverables.<br><br><em><strong>Constraint:</strong> Do not copy any template from the internet; write each section in your own words for a real food delivery feature (e.g., promo code, order tracking).</em>
+
+Answer:
+Test Plan ID: TP-001
+-----------
+
+Feature Description:
+--------------------
+
+Feature: Promo Code
+This feature allows users to apply a valid promo code during checkout to get a discount on their food order.
+
+Test Scope:
+-----------
+Verify that a valid promo code works.
+Verify that an invalid or expired promo code shows an error.
+Check that the correct discount is applied.
+Verify that only one promo code can be used at a time.
+Check that the final payment amount is correct.
+
+Roles & Responsibilities:
+-------------------------
+Tester: Prepare test cases, perform testing, report bugs, and verify fixes.
+Developer: Fix the reported bugs.
+Project Manager: Monitor the testing process and ensure timely completion.
+
+Test Environment:
+-----------------
+Android smartphone
+Swiggy test application
+Stable internet connection
+Test account with sample promo codes
+
+Test Deliverables:
+------------------
+Test Plan
+Test Cases
+Bug Report
+Test Summary Report
+Final Test Report
