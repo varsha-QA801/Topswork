@@ -1,0 +1,114 @@
+Section : A
+___________
+
+Question 1: Based on the Agile SDLC model, explain when testing should begin in the sprint cycle,
+define two entry criteria and two exit criteria you would propose for a sprint, and describe how
+testing in an Agile model fundamentally differs from testing in the Waterfall model.
+
+Answer:
+In Agile, testing should start from the beginning of the sprint. Testing and coding are done together.
+
+Entry Criteria:
+1. The requirements are clear.
+2. The testing setup is ready.
+
+Exit Criteria:
+1. All important tests are completed.
+2. All major bugs are fixed.
+
+Agile and Waterfall: In Agile, testing is done again and again during development. Testers and developers work together.
+In Waterfall, testing is done after development is finished. So, bugs may be found late.
+
+Question 2: Identify three non-functional testing types that are critical for this payment gateway
+scenario and justify why each cannot be skipped. Then apply the relevant principle from the 7
+Key Principles of Testing that explains why attempting to test every possible transaction
+combination is not feasible
+
+Answer:
+1. Performance Testing:
+It checks if the payment system can handle 5,000 users at one time without becoming slow or crashing.
+
+2. Security Testing:
+It checks if customer and payment details are safe from unauthorized people.
+
+3. Reliability Testing:
+It checks if the system can work properly for a long time without failing.
+
+Testing Principle – Exhaustive Testing is Impossible:
+It is not possible to test every possible transaction because there are too many combinations. So, testers should test the most important and risky cases.
+
+Question 3: Using Equivalence Partitioning and Boundary Value Analysis, identify all valid and
+invalid equivalence partitions for this field, list the exact boundary values, and explain which
+technique offers better defect coverage for this specific scenario and why.
+
+Answer: Valid Equivalence Partitions:
+
+ -6–10 alphanumeric characters → Valid
+ -Less than 6 characters → Invalid
+ -More than 10 characters → Invalid
+ -Special characters → Invalid
+
+Boundary Values:
+
+ -5 characters → Invalid
+ -6 characters → Valid
+ -10 characters → Valid
+ -11 characters → Invalid
+
+ Question 4: Classify both defects using the correct Severity and Priority labels from the
+categories taught in class. Explain the difference between Severity and Priority using these two
+defects as examples, and justify which defect must be fixed first — and why.
+
+Answer:
+
+Defect A:
+
+Severity: High
+Priority: High
+
+The app crashes when users place an order.
+It affects many users.
+
+Defect B:
+
+Severity: Low
+Priority: Low
+
+The logo is only a little misaligned.
+The app still works normally.
+
+Severity = How serious the problem is.
+Priority = How quickly it should be fixed.
+
+Defect A should be fixed first because it stops users from placing orders.
+
+Question 5: Identify the two distinct types of testing that this scenario calls for, describe the
+specific checks you would perform for each type, and name the tools or methods a QA tester
+would use to efficiently replicate and document both issues.
+
+Answer:
+
+There are two types of testing:
+
+1. Cross-Browser Testing
+-Check the map on Chrome and Firefox.
+-Make sure it works on both.
+-Use Browser.
+
+2. Responsive Testing
+-Check the page at 768px.
+-Make sure the page fits and works well.
+-Use Chrome Dev Tools.
+
+Question 6: Describe how you would use SQL to validate that the delivery address captured in the
+UI was correctly stored in the database. Write the SQL query structure you would use, and explain
+the difference between data verification and data validation in this context.
+
+Answer:
+
+
+
+
+ 
+
+
