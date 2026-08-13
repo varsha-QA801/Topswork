@@ -1,0 +1,67 @@
+1.
+Pick any one feature from a popular app you use daily (for example: Instagram signup, Flipkart add-to-cart, or Paytm recharge) and write 5 clear requirements for that feature.
+
+Answer:
+Feature: Add to Cart
+
+User can add a product to the cart.
+Cart number increases after adding a product.
+Added product should appear in the cart.
+User can change the quantity.
+User can remove the product from the cart.
+
+The cart should work correctly when users add, change, or remove products.
+
+
+2.
+For the requirements you wrote in Task 1, create a table mapping each requirement to at least one test case that would verify it works as intended.<br><br><em><strong>Hint:</strong> Your table should have columns: Requirement ID, Requirement Description, Test Case ID, Test Case Description.</em>
+
+Answer:
+Requirement      ID	Requirement	              Test Case ID	           Test Case
+R1             	User can add a product.	          TC1	          Add a product and check it is added.
+R2	            Cart number increases.	          TC2	          Add a product and check the cart number.
+R3            	Product is shown in cart.       	TC3          	Open the cart and check the product.
+R4	            User can change quantity.	        TC4         	Change the quantity and check it.
+R5	            User can remove product.	        TC5         	Remove the product and check it is gone.
+
+
+3.
+Extend your table from Task 2 by adding a 'Defect ID' column. Imagine that during testing, you find 2 bugs related to your test cases. Link these defects to the relevant test cases in your table.<br><br><em><strong>Hint:</strong> Defects can be things like 'Signup button not enabled' or 'OTP not received'.</em>
+
+Answer:
+
+Requirement	                   Test Case                              	Defect ID
+Add product                 	Add product to cart.	                       D001
+Cart number increases       	Check cart number after adding.              	—
+Product shows in cart       	Open cart and check product.	               D002
+Change quantity             	Change product quantity.                    	—
+Remove product               	Remove product from cart.	                    —
+
+
+4.
+Explain in 3-4 sentences the difference between forward traceability and backward traceability in the context of your table. Give one example of each using your requirements and test cases.
+
+Answer:
+
+Forward traceability means Requirement → Test Case.
+Example: R1 (Add product) → TC1 (Check product is added).
+
+Backward traceability means Test Case → Requirement.
+Example: TC4 (Change quantity) → R4 (Change quantity).
+
+5.
+Create a bi-directional RTM (Requirements Traceability Matrix) for the login feature of a food delivery app like Zomato, showing how each requirement is linked to test cases and how test cases trace back to requirements.<br><br><em><strong>Constraint:</strong> Include at least 3 requirements and 5 test cases in your matrix.</em>
+
+Answer:
+
+Requirement	                                  Test Case                       	Backward Link
+R1: Enter phone number	              TC1: Enter correct number            	    TC1 → R1
+R1: Enter phone number	              TC2: Enter wrong number	                  TC2 → R1
+R2: Enter OTP                        	TC3: Enter correct OTP	                  TC3 → R2
+R2: Enter OTP	                        TC4: Enter wrong OTP	                    TC4 → R2
+R3: Login successfully	              TC5: Login with correct details         	TC5 → R3
+
+Forward: R1 → TC1
+Backward: TC1 → R1
+
+
