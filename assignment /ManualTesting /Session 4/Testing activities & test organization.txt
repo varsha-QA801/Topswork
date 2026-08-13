@@ -1,0 +1,38 @@
+1.
+Pick any one app you use daily (like Zomato, Instagram, or Paytm) and list 6 specific testing activities you would perform before its latest feature release. For each activity, write 1 line describing what it checks.
+
+Answer:
+App: Zomato
+Function Testing – Checks if the new feature works properly.
+UI Testing – Checks if the app looks good and all buttons work.
+Usability Testing – Checks if the feature is easy to use.
+Speed Testing – Checks if the feature works quickly.
+Device Testing – Checks if the feature works on different phones.
+Security Testing – Checks if user information is safe.
+
+2.
+Create a responsibility matrix (RACI chart) for a test team working on a new Flipkart-style shopping cart feature. Include at least 4 roles: Tester, Test Leader, Developer, and Product Owner. Assign who is Responsible, Accountable, Consulted, and Informed for each of these activities: Test Planning, Test Case Design, Test Execution, Bug Reporting.
+
+Answer:
+
+3.
+Write a brief job description (3-4 lines) for the role of a Test Leader in a team testing a new BookMyShow movie booking feature. Focus on daily responsibilities and decision-making areas.
+
+Answer:
+A Test Leader manages the testing work.
+They give tasks to testers and check their progress.
+They find important bugs and decide which ones to fix first.
+They help decide when the movie booking feature is ready to launch.
+
+
+4.
+Define a list of at least 5 testing activities needed for a small project to add a 'Dark Mode' toggle in a music app like Spotify. For each activity, specify whether it should be done by the Tester or Test Leader.<br><br><em><strong>Hint:</strong> Think about planning, designing, executing, and reviewing tests for this feature.</em>
+
+Answer:
+
+Test Planning – Plan how to test Dark Mode. → Test Leader
+Test Case Writing – Write tests for Dark Mode. → Tester
+Test Execution – Turn Dark Mode ON and OFF and check it. → Tester
+Bug Reporting – Report any problems found. → Tester
+Test Review – Check the results and decide if Dark Mode is ready. → Test Leader
+
