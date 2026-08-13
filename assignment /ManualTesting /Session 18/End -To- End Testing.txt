@@ -1,0 +1,76 @@
+1.
+Write an end-to-end test scenario for booking a movie ticket on BookMyShow, starting from searching for a movie to completing the payment and receiving a booking confirmation.
+
+Answer:
+BookMyShow – End-to-End Test Scenario
+Scenario: Book a movie ticket successfully.
+
+Steps:
+Open BookMyShow.
+Search for a movie.
+Select the movie and theatre.
+Select date and show time.
+Select seats.
+Enter required details.
+Make the payment.
+Check booking confirmation.
+
+Expected Result:
+Movie ticket should be booked successfully and booking confirmation should be received. 
+
+E2E Testing: Checks the complete process from start to finish
+
+
+2.
+Create a detailed system integration test scenario for placing a food order on Zomato, covering steps from selecting a restaurant and adding items to cart, to payment and order tracking.
+
+Answer:
+Zomato – System Integration Test
+Scenario: Place a food order.
+
+Login to Zomato.
+Select a restaurant.
+Select food and add to cart.
+Check the total price.
+Select delivery address.
+Make payment.
+Check order confirmation.
+Track the order.
+
+Expected Result:
+Food order should be placed successfully, payment should work, and order tracking should be available. 
+
+
+3.
+Write an end-to-end workflow test for a Flipkart-style shopping journey: user logs in, searches for a product, adds it to the cart, applies a discount coupon, selects an address, and completes the purchase.<br><br><em><strong>Hint:</strong> Include both positive and one negative scenario (e.g., invalid coupon or out-of-stock item).</em>
+
+Answer:
+Flipkart – End-to-End Test
+
+Positive Scenario:
+Login to Flipkart.
+Search for a product.
+Add product to cart.
+Apply a valid coupon.
+Select delivery address.
+Complete payment.
+Check order confirmation. 
+
+Negative Scenario:
+Apply an invalid coupon → Coupon should not apply and an error message should appear. 
+
+Expected Result:
+Product should be purchased successfully with a valid coupon.
+
+
+4.
+List all the system integrations involved in a Paytm mobile recharge flow (user login, plan selection, payment, SMS confirmation), and write one test case for each integration point.
+
+Answer:
+Paytm Mobile Recharge – System Integrations
+
+Integration                              	Test Case                                     	Expected Result
+Login                            	Login with valid details	                        User logs in successfully 
+Plan Selection	                  Select a recharge plan	                          Correct plan and price are shown 
+Payment                          	Pay using UPI/Card	                              Payment is completed successfully 
+SMS Confirmation                 	Complete recharge	                                Confirmation SMS is received
