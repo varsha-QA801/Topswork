@@ -10,10 +10,27 @@ Speed Testing – Checks if the feature works quickly.
 Device Testing – Checks if the feature works on different phones.
 Security Testing – Checks if user information is safe.
 
+
 2.
 Create a responsibility matrix (RACI chart) for a test team working on a new Flipkart-style shopping cart feature. Include at least 4 roles: Tester, Test Leader, Developer, and Product Owner. Assign who is Responsible, Accountable, Consulted, and Informed for each of these activities: Test Planning, Test Case Design, Test Execution, Bug Reporting.
 
 Answer:
+R = Does the work
+A = Takes final responsibility
+C = Gives advice
+I = Gets information
+
+Work	                  Tester    Test Leader    Developer    Product Owner
+Test Planning           	R        	A	               C	           C
+Test Case Design        	R	        A                C          	 I
+Test Execution	          R	        A                C	           I
+Bug Reporting	            R        	A                C             I
+
+Tester: Does the testing and finds bugs.
+Test Leader: Plans and controls the testing.
+Developer: Helps with technical problems and fixes bugs.
+Product Owner: Gives business requirements and gets updates.
+
 
 3.
 Write a brief job description (3-4 lines) for the role of a Test Leader in a team testing a new BookMyShow movie booking feature. Focus on daily responsibilities and decision-making areas.
