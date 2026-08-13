@@ -1,0 +1,93 @@
+1.
+Given the following pseudo-code for a function that calculates delivery charges based on order amount, write white-box test cases to achieve 100% statement coverage.
+
+function calculateDeliveryCharge(amount):
+if amount >= 500:
+return 0
+else:
+return 50
+
+Answer:
+
+White-Box Testing – Delivery Charge
+
+Rule:
+Amount ≥ ₹500 → Delivery charge ₹0
+Amount < ₹500 → Delivery charge ₹50
+
+Test Case          	Amount    	Expected Result
+TC1               	₹500               ₹0
+TC2               	₹400               ₹50
+
+
+2.
+Write white-box test cases for the following pseudo-code to achieve full branch coverage:
+
+function getDiscount(userType, total):
+if userType == "student":
+if total > 1000:
+return 20
+else:
+return 10
+else:
+return 5
+
+Answer:
+
+White-Box Testing – Discount
+
+Rules:
+Student + total > ₹1000 → 20% discount
+Student + total ≤ ₹1000 → 10% discount
+Non-student → 5% discount
+
+Test Case	            User Type            	Total       	Result
+TC1	                  Student	              ₹1500	         20%
+TC2	                  Student	              ₹800	         10%
+TC3                   Non-student           ₹1500	          5%
+
+
+3.
+For this pseudo-code that checks payment method and amount, write test cases to achieve condition coverage:
+
+function is Payment Allowed(method, amount):
+if (method == "UPI" or method == "Card") and amount <= 10000:
+return true
+else:
+return false
+
+Answer:
+
+Condition Coverage – Payment
+
+Rules:
+Payment method = UPI or Card
+Amount = ₹10,000 or less
+
+Test Case      	Method	     Amount	     Result
+TC1	             UPI         5,000	     True 
+TC2	             Card        5,000	     True 
+TC3	             Cash	       5,000       False 
+TC4	             UPI	       12,000	     False
+
+
+4.
+Given the pseudo-code below for a simple login check, write white-box test cases to cover all unique execution paths (path coverage):
+
+function login(username, password):
+if username == "admin":
+if password == "pass123":
+return "Login Success"
+else:
+return "Wrong Password"
+else:
+return "User Not Found"
+
+Answer:
+
+White-Box Testing – Login
+Test Case   	Username    	Password	   Expected Result
+TC1          	admin        	pass123	     Login Success 
+TC2	          admin        	wrong123	   Wrong Password 
+TC3	          user	        pass123      User Not Found 
+
