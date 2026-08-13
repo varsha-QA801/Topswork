@@ -1,0 +1,111 @@
+1.
+Write equivalence partitioning (EP) test cases for the phone number input field in a Zomato-style food order form, where the field must accept exactly 10 digits and no letters or special characters.
+
+Answer:
+Equivalence Partitioning Test Cases – Phone Number
+
+Test Case	                       Input                	Expected Result
+1. Valid	                     9876543210                 	Accept
+2. Less than 10 digits  	     987654321	                  Reject
+3. More than 10 digits         98765432101                 	Reject
+4. Letters                  	 98765abc10	                  Reject
+5. Special characters          98765@3210                  	Reject
+
+
+2.
+For a Flipkart-style sign-up form with a password field that must be 8-16 characters long, write boundary value analysis (BVA) test cases to check the minimum, just above minimum, maximum, and just above maximum password lengths.<br><br><em><strong>Hint:</strong> Consider test cases for 7, 8, 9, 15, 16, and 17 characters.</em>
+
+Answer:
+
+Password rule: 8 to 16 characters
+
+7 characters →  Invalid
+8 characters →  Valid
+9 characters →  Valid
+15 characters →  Valid
+16 characters →  Valid
+17 characters → Invalid
+
+
+3.
+Given an Instagram-like post creation form with a caption input that allows up to 2200 characters, use equivalence partitioning to identify valid and invalid input ranges and write at least 3 test cases for each partition.
+
+Answer:
+
+Instagram Caption – Equivalence Partitioning
+Rule: Caption should be 0 to 2200 characters.
+
+Valid Inputs:
+100 characters → Accept 
+1000 characters → Accept 
+2200 characters → Accept 
+
+Invalid Inputs:
+2201 characters → Reject 
+2300 characters → Reject 
+2500 characters → Reject
+
+
+4.
+For a BookMyShow movie ticket booking form with a 'number of tickets' field (allowed: 1 to 10), write BVA test cases to ensure the field correctly handles edge values.
+
+Answer:
+
+BVA Test Cases – Number of Tickets
+
+Rule: 1 to 10 tickets allowed
+0 tickets →  Reject
+1 ticket →  Accept
+2 tickets →  Accept
+9 tickets →  Accept
+10 tickets →  Accept
+11 tickets →  Reject
+
+
+5.
+Pick any app you use daily (such as Paytm, Myntra, or IRCTC) and select one form field (e.g., amount, pincode, age). Write both equivalence partitioning and boundary value analysis test cases for that field, explaining your reasoning for each.
+
+Answer:
+
+Myntra – EP and BVA
+
+1. Amount
+Rule: ₹1 to ₹10,000
+
+EP:
+500 → Accept 
+0 → Reject 
+10,001 → Reject 
+
+BVA:
+0 → Reject 
+1 → Accept 
+10,000 → Accept 
+10,001 → Reject 
+
+2. Pincode
+Rule: 6 digits
+
+EP:
+380001 → Accept 
+38001 → Reject 
+3800011 → Reject 
+
+BVA:
+5 digits → Reject 
+6 digits → Accept 
+7 digits → Reject 
+
+3. Age
+Rule: 18 to 60 years
+
+EP:
+25 → Accept 
+17 → Reject 
+65 → Reject 
+
+BVA:
+17 → Reject 
+18 → Accept 
+60 → Accept 
+61 → Reject
