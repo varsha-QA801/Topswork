@@ -2,10 +2,49 @@
 Download a sample Terms & Conditions document from any popular app (like Zomato, Flipkart, or Instagram), and perform a static review to identify at least 5 unclear or ambiguous statements that could confuse users.
 
 Answer:
+No.	                        Unclear Point                 	Problem
+1	                       Terms can change	              User may not know when.
+2                     	 Appropriate action             Action is not explained.
+3	                       Some restrictions apply	      Restrictions are unclear.
+4	                       Service may be unavailable   	Time is not mentioned.
+5	                       Extra charges may apply       	Exact charges are not given.
+
 
 2.
 Create a comparison table listing 3 key differences between static testing and dynamic testing, using real-life examples from apps you use daily (such as a privacy policy review vs. actually filling a signup form).
+
+Answer:
+
+Point                          	Static Testing	                                 Dynamic Testing
+Meaning	               Check without running the app.                      	Check by running the app.
+Example	               Review Instagram Privacy Policy.	                    Fill Instagram Sign-up form.
+Finds	                 Spelling, unclear text, missing information.	        Functional errors and bugs.
+When	                 Before or during development.	                      When the app is running.
+
+
 3.
 Imagine you are part of a code walkthrough for a new feature in a food delivery app (like Swiggy) — write 5 questions or points you would raise while reviewing the code for the 'Apply Coupon' function.
+
+Answer:
+Code Walkthrough – Swiggy Apply Coupon
+
+1.Is the coupon valid? → Check coupon code properly.
+2.Is the coupon expired? → Expired coupons should not work.
+3.Is the minimum order amount checked? → Coupon should work only when the condition is met.
+4.Is the discount calculated correctly? → Check the final discount amount.
+5.What happens with an invalid coupon? → Show a clear error message.
+
+
 4.
 Conduct a mock inspection of a sample bug report from any open-source project (find one on GitHub or use a template online), and list 3 improvements you would suggest to make the report clearer and more useful for developers.<br><br><em><strong>Hint:</strong> Look for missing steps, unclear expected results, or vague descriptions.</em>
+Topic Repository URL
+
+Answer:
+Mock Inspection – Bug Report
+
+Login bug report
+
+No.                   	Problem Found	                  Improvement
+1	                   Steps are not clear	           Add step-by-step instructions.
+2	                   Expected result is missing      Clearly write what should happen.
+3	                   Bug description is vague	       Give exact details of the problem.
