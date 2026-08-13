@@ -1,0 +1,58 @@
+1.
+Download a sample SRS (Software Requirements Specification) document for a food delivery app (like Zomato) and perform a peer review by highlighting at least 5 unclear or ambiguous requirements.
+
+Answer:
+
+No.      	Unclear Requirement	                        Problem
+1        	App should load fast.         	           “Fast” is not clear.
+2	        Search should be easy.         	           “Easy” is not explained.
+3       	Payment should be secure.      	            Security details are missing.
+4       	Order should be confirmed quickly.          “Quickly” is not clear.
+5	        App should support many users.	            Number of users is not given.
+
+
+2.
+Conduct an informal review of a friend's written test case set for a simple login feature (username and password), and write down 3 suggestions or improvements you would make.
+
+Answer:
+
+Test with the correct username and password.
+Test with a wrong username or password.
+Test with empty username or password.
+
+
+3.
+Simulate a walkthrough session by explaining the steps of a test case for 'Add to Cart' functionality (like Flipkart) to a classmate and note any questions or feedback they give you.<br><br><em><strong>Hint:</strong> Focus on whether all steps are clear and if any preconditions or expected results are missing.</em>
+
+Answer:
+
+Walkthrough – Add to Cart
+
+Test: Check if a product can be added.
+Steps:
+Open the app.
+Search for a product.
+Select the product.
+Click Add to Cart.
+Open the cart.
+Check the product.
+
+Classmate’s Feedback:
+Steps are clear.
+User should be logged in first.
+Product should appear in the cart.
+Cart number should increase.
+
+
+4.
+Identify 4 types of errors or issues that static testing (reviewing documents or code without execution) can catch in a test case document for an online movie booking system (like BookMyShow).
+
+Answer:
+
+4 Errors Static Testing 
+Missing step – A step is not written.
+Wrong information – Incorrect movie or seat details.
+Unclear step – The step is hard to understand.
+Missing result – Expected result is not given.
+
+
