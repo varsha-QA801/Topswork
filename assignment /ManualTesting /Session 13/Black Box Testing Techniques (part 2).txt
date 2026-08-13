@@ -1,0 +1,90 @@
+1.
+Create a decision table for a Flipkart-style coupon validation system where a coupon is only valid if: (1) the user is logged in, (2) the cart value is above ₹500, and (3) the coupon has not expired. Show all possible combinations and the resulting action (accept/reject).
+
+Answer:
+Flipkart Coupon – Decision Table
+
+Rules:
+User must be logged in.
+Cart value must be more than ₹500.
+Coupon must not be expired.
+
+Login    	Cart > ₹500   	Coupon Valid	    Result
+Yes         	Yes             	Yes       	Accept 
+Yes          	Yes              	No        	Reject 
+Yes	          No              	Yes	        Reject 
+Yes         	No	              No	        Reject 
+No	          Yes             	Yes	        Reject 
+No          	Yes              	No	        Reject 
+No          	No               	Yes        	Reject 
+No	          No              	No	        Reject 
+
+
+2.
+Draw a state transition diagram for a Paytm login feature that locks the account after 3 failed password attempts and only unlocks after a successful OTP verification.
+
+Answer:
+
+Start
+          ↓
+    [Login Page]
+          ↓
+   Enter Password
+      ↙        ↘
+ Correct      Wrong
+   ↓            ↓
+[Login]    Failed Attempt 1
+              ↓
+          Wrong Again
+              ↓
+        Failed Attempt 2
+              ↓
+          Wrong Again
+              ↓
+        [Account Locked]
+              ↓
+          Enter OTP
+          ↙       ↘
+     Correct      Wrong
+        ↓           ↓
+ [Account Unlocked]  [Locked]
+        ↓
+      Login
+
+
+3.
+Given the following use case: 'A Zomato user can place an order, cancel it before it is prepared, or track the order once prepared,' create a use case diagram and list at least 3 possible test scenarios based on it.
+
+Answer:
+
+Zomato – Use Case Diagram
+          Zomato
+            |
+          User
+       /    |    \
+      ↓     ↓     ↓
+   Place   Cancel  Track
+   Order   Order   Order
+
+Test Scenarios
+User can place an order successfully. 
+User can cancel the order before preparation. 
+User can track the order after preparation. 
+
+
+4.
+Modify your decision table from Task 1 to include an additional rule: the coupon cannot be used more than twice by the same user. Update the table and explain how this new rule changes the possible outcomes.<br><br><em><strong>Hint:</strong> Add a column for 'Coupon Usage Count' and adjust the actions accordingly.</em>
+
+Answer:
+
+Flipkart Coupon – Simple Decision Table
+Login      	Cart > ₹500    	Coupon Valid	   Usage	Result
+Yes           	Yes            	Yes	           0	Accept 
+Yes            	Yes	            Yes            1	Accept 
+Yes           	Yes	            Yes	           2	Accept 
+Yes	            Yes           	Yes	           3	Reject 
+No	            Yes           	Yes            1	Reject 
+Yes	            No	            Yes	           1	Reject 
+Yes            	Yes           	No	           1	Reject 
+
+
