@@ -1,0 +1,71 @@
+1.
+Write a unit test scenario for the 'Add to Cart' function in a shopping app like Flipkart, focusing on what should be tested at the smallest code level (e.g., adding an item updates the cart count).
+
+Answer:
+Unit Test Scenario – Add to Cart
+Scenario: Check the Add to Cart function.
+Test: Add one product to the cart.
+Input: 1 product
+Expected Result: Cart count should increase by 1.
+
+Example: If the cart has 2 items, after adding one item it should show 3 items.
+
+
+2.
+Describe an integration testing scenario for a payment flow in a food delivery app like Zomato, where you need to test the interaction between the order placement module and the payment gateway.
+
+Answer:
+Integration Testing – Payment
+User selects food and places an order.
+User makes the payment.
+Payment is successful.
+The order should be confirmed.
+
+Example:
+If the payment is successful, the order should show “Order Confirmed.”
+
+order system and payment system work together correctly.
+
+
+3.
+Write a system testing scenario for the ticket booking process in an app like BookMyShow, covering the entire end-to-end flow from searching for a movie to receiving a booking confirmation.
+
+Answer:
+System Testing – Movie Ticket Booking
+Test: Check the full booking process.
+
+Search for a movie.
+Select the movie and cinema.
+Choose a show time.
+Select seats.
+Make the payment.
+Booking should be successful.
+User should get a booking confirmation.
+
+Example:
+User searches for a movie → selects seats → pays → gets the ticket confirmation.
+
+
+4.
+Create an acceptance testing (UAT/SAT) scenario for a new playlist feature in a music app like Spotify, focusing on how a real user would verify that the feature meets their needs.
+
+Answer:
+Acceptance Testing – Playlist
+
+Create a new playlist.
+Add songs to it.
+Play the songs.
+Check that the playlist is saved.
+
+Expected result: The playlist should work correctly and meet the user’s needs.
+
+
+5.
+Write a scenario for either alpha or beta testing for a new group chat feature in a messaging app like WhatsApp, specifying who would perform the test and what feedback is expected.<br><br><em><strong>Hint:</strong> Think about internal employees vs. real users and the types of issues they might report.</em>
+
+Answer:
+Beta Testing – Group Chat
+Who tests: Real users.
+What they do: Create a group and send messages.
+Feedback: They report any problems, such as messages not sending or notifications not working.
+
