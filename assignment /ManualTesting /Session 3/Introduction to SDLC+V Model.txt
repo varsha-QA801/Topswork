@@ -1,0 +1,13 @@
+1.
+Draw the V-Model diagram on paper or using any digital tool, and clearly label each phase with both the developer and tester roles involved at each step.
+
+Answer:
+2.
+Pick any app you use daily (like Zomato, Instagram, or Paytm) and write a short table mapping each SDLC phase (Requirement, Design, Coding, Testing, Deployment, Maintenance) to a real activity that would happen for that app.
+
+Answer:
+
+3.
+For each phase of the V-Model, list one specific testing activity that should be performed, using examples from a food delivery app (like Swiggy or Zomato).<br><br><em><strong>Hint:</strong> For example, during 'System Testing', you might test if the order placement works end-to-end.</em>
+4.
+Compare the V-Model and RAD Model by listing 3 strengths and 2 weaknesses of each, focusing on how testing is handled in both models.
