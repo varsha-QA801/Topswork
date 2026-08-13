@@ -1,0 +1,50 @@
+1.
+Create a smoke test checklist for the login and dashboard features of a food delivery app like Zomato, listing at least 5 key test cases that would quickly verify if the main flows work after a new build.
+
+Answer:
+Smoke Testing – Zomato
+
+Main Features: Login & Dashboard
+Open app → App should open successfully. 
+Enter valid login details → User should login successfully. 
+Enter wrong password → Error message should appear. 
+Open Dashboard → Dashboard should load properly. 
+Search restaurant → Search should work correctly.
+
+
+2.
+Write a sanity test scenario for the 'Add to Cart' feature in a Flipkart-style shopping app, focusing only on verifying a recent bug fix without retesting unrelated functionality.<br><br><em><strong>Hint:</strong> Your scenario should be limited to confirming the specific fix works as expected.</em>
+
+Answer:
+Sanity Test – Add to Cart
+Test Scenario: Check the fixed Add to Cart feature.
+
+Steps:
+Open the app.
+Select a product.
+Click Add to Cart.
+Open the cart.
+
+Expected Result: Product should be added to the cart successfully.
+
+
+3.
+Compare smoke testing and sanity testing by creating a table with at least 4 differences, using examples from popular apps like Instagram or Paytm to illustrate each point.
+
+Answer:
+
+Smoke Testing                                                    	Sanity Testing
+   1.Checks main features.                                             	1.Checks a specific feature.
+   2.Done after a new build.                                            2.Done after a bug fix/change.
+   3.Covers more areas.                                               	3.Covers a small area.
+    Example: Instagram Login + Feed + Search.                       	    Example: Instagram Search bug fix.
+    Example: Paytm Login + Recharge + Payment.                       	    Example: Paytm Recharge bug fix.
+
+
+4.
+Given this situation: After a major update, the Spotify app crashes on startup for some users. Decide whether smoke testing or sanity testing is appropriate first, and explain your reasoning in 2-3 lines.
+
+Answer:
+
+Smoke Testing should be done first. 
+The app is crashing when it opens, so we first need to check if the basic app is working after the update.
