@@ -1,0 +1,11 @@
+1.
+Download a sample Terms & Conditions document from any popular app (like Zomato, Flipkart, or Instagram), and perform a static review to identify at least 5 unclear or ambiguous statements that could confuse users.
+
+Answer:
+
+2.
+Create a comparison table listing 3 key differences between static testing and dynamic testing, using real-life examples from apps you use daily (such as a privacy policy review vs. actually filling a signup form).
+3.
+Imagine you are part of a code walkthrough for a new feature in a food delivery app (like Swiggy) — write 5 questions or points you would raise while reviewing the code for the 'Apply Coupon' function.
+4.
+Conduct a mock inspection of a sample bug report from any open-source project (find one on GitHub or use a template online), and list 3 improvements you would suggest to make the report clearer and more useful for developers.<br><br><em><strong>Hint:</strong> Look for missing steps, unclear expected results, or vague descriptions.</em>
