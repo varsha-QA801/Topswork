@@ -1,0 +1,63 @@
+1.
+Pick any live webpage you use daily (for example, Zomato, Flipkart, or BookMyShow home page) and conduct 15 minutes of exploratory testing — note at least 5 issues, unexpected behaviors, or UI glitches you discover during your session.
+
+Answer:
+
+Exploratory Testing – Flipkart Home Page
+Testing Time: 15 Minutes
+
+Issues Found:
+1.Search suggestions sometimes do not appear.
+2.Some product images load slowly.
+3.Home page loads slowly on slow internet.
+4.Some banners are not clickable.
+5.Product price may change after opening the product.
+
+
+2.
+Use error guessing on the Flipkart login page — try at least 3 unusual input combinations (such as a very long email, special characters in the password, or blank fields) and record what happens in each case.<br><br><em><strong>Hint:</strong> Think about what kinds of mistakes real users might make and how the app should respond.</em>
+
+Answer:
+Flipkart Login – Error Guessing
+
+Very long email → Show error message 
+Special characters in password → Show proper message
+Blank email and password → Show “Required” message
+
+
+3.
+Create a table listing at least 5 exploratory test scenarios you would perform on the Zomato restaurant search feature, including what you would do and what kind of bugs you might expect to find.
+
+Answer:
+
+Zomato Search – Exploratory Testing
+Test   	What I Do               	   Possible Bug
+1      	Search restaurant            Wrong result
+2      	Type wrong spelling	         No result
+3     	Search blank            	   Error
+4	      Type special characters      Search not working
+5	      Type long text	             Error/crash
+
+
+4.
+Perform exploratory testing on the Paytm recharge flow (up to the payment screen, do not actually pay) and write a short report describing your testing approach, any bugs or usability issues found, and suggestions for improvement.<br><br><em><strong>Constraint:</strong> Focus on areas where you think users might get confused or stuck, not just obvious errors.</em>
+
+Answer:
+
+Paytm Recharge 
+
+Testing Approach:
+I checked the recharge process up to the payment screen. I did not make the payment.
+
+Issues Found:
+Recharge plans can be confusing.
+Wrong mobile number can be entered.
+Plan details are not always clear.
+Final amount should be easy to see.
+User may be confused before payment.
+
+Suggestions:
+Show clear plan details.
+Show the final amount clearly.
+Add a confirmation message.
+Show simple error messages.
