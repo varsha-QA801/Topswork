@@ -1,0 +1,69 @@
+1.
+Pick any one feature from a popular app you use (like Instagram's post upload, Zomato's order placement, or Flipkart's add to cart) and write 3 test cases you would re-test after a bug fix is made to that feature.
+
+Answer:
+
+Feature: Flipkart – Add to Cart
+
+After a bug fix, I would re-test these 3 cases:
+
+Add Product → Product should be added to the cart. 
+Remove Product → Product should be removed from the cart. 
+Change Quantity → Cart quantity and price should update correctly. 
+
+
+2.
+Imagine you are testing the 'Apply Coupon' feature on Swiggy. After a bug related to coupon validation is fixed, design a re-testing checklist with at least 4 steps to confirm the fix works as expected.<br><br><em><strong>Hint:</strong> Think about both valid and invalid coupon scenarios.</em>
+
+Answer:
+
+Swiggy – Apply Coupon Re-testing checklist
+
+Valid coupon → Discount should apply.
+Wrong coupon → Should be rejected.
+Expired coupon → Should be rejected.
+Low order amount → Coupon should not apply.
+Final price → Discount should be correct.
+
+
+3.
+Create a regression test suite for the 'Search' module in a music streaming app (like Spotify). List at least 5 regression test cases that should be run after any update to the search functionality.
+
+Answer:
+
+Music App – Search Regression Test Suite
+
+Feature: Search
+
+Search a song name → Correct song should appear. 
+Search an artist name → Correct artist should appear. 
+Search an album name → Correct album should appear. 
+Search with wrong spelling → Relevant results or “No results” should appear. 
+Search with blank field → Proper message should appear.
+
+
+4.
+Explain why regression testing is especially important in agile development when teams release new features every sprint. Give two examples from any app you use where skipping regression testing could cause old features to break.
+
+Answer:
+Regression testing is important in Agile because new changes can break old features. Teams release new features every sprint, so old features must be checked again.
+
+Example 1 – Zomato:
+If a new payment feature is added, the order placement feature may stop working.
+
+Example 2 – Instagram:
+If a new search feature is added, the login or post upload feature may stop working.
+
+
+5.
+Suppose your team just released a new version of a movie ticket booking app (like BookMyShow) with a major update to the payment module. Select 3 modules (other than payment) that could be affected and describe one regression test you would run for each.<br><br><em><strong>Hint:</strong> Think about modules like seat selection, booking history, or notifications that interact with payment.</em>
+
+Answer:
+
+Answer:
+BookMyShow – Regression Testing
+Seat Selection → Check selected seats are booked after payment. 
+Booking History → Check booking appears after successful payment. 
+Notifications → Check booking confirmation is received. 
+
+Regression testing: Make sure the payment update does not break other features.
