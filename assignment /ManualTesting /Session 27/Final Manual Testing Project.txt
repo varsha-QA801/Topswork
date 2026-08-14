@@ -1,0 +1,107 @@
+1.
+Pick any one app you use daily (like Zomato, Instagram, or Paytm) and write a short summary of its main features and what you think the business requirements are for that app.
+
+Answer:
+App: Zomato
+
+Main Features:
+Find restaurants.
+View food menus.
+Order food.
+Pay online.
+Track orders.
+Give reviews.
+
+Business Requirements:
+Make food ordering easy.
+Connect users with restaurants.
+Provide safe payments.
+Deliver food on time.
+Keep customers happy.
+
+2.
+For the app you chose, create a test plan document that lists the testing objectives, scope, resources needed, and a rough timeline for manual testing.<br><br><em><strong>Hint:</strong> Focus on 2-3 key features such as login, search, or payment.</em>
+
+Answer:
+Test Plan – Zomato App
+
+1. Testing Objectives
+Check that login works correctly.
+Check that restaurant search works.
+Check that online payment works.
+
+2. Testing Scope
+Login and logout
+Restaurant search
+Payment process
+Basic error handling
+
+3. Resources Needed
+Android/iPhone
+Internet connection
+Test user accounts
+Different payment methods
+JIRA for reporting bugs
+
+4. Timeline
+Day 1: Test login
+Day 2: Test restaurant search
+Day 3: Test payment
+Day 4: Retest bugs and prepare the final report.
+
+3.
+Write 5 test scenarios and 8 detailed test cases (with steps, expected results, and test data) for a core feature of your selected app, such as placing a food order, sending a message, or making a payment.
+
+Answer:
+Zomato – Food Order Testing
+
+5 Test Scenarios
+Search and select a restaurant.
+Add food to the cart.
+Change the food quantity.
+Place the food order.
+Make payment and confirm the order.
+
+8 Test Cases
+Test Case	                                Steps	                           Test Data              	Expected Result
+TC01 – Search Restaurant             Open app → Search restaurant        	“Pizza Hut”             	Restaurant is shown.
+TC02 – Select Food                   Open restaurant → Select food	       Pizza	                  Food details are displayed.
+TC03 – Add to Cart                   Select food → Tap Add to Cart         1 Pizza	                Food appears in cart.
+TC04 – Change Quantity             	 Open cart → Increase quantity	       Quantity: 2            	Quantity and price update.
+TC05 – Remove Food                   Open cart → Remove item	             1 Pizza                 	Item is removed.
+TC06 – Enter Address             	   Go to checkout → Enter address        Ahmedabad address	      Address is saved.
+TC07 – Make Payment	                 Select payment → Pay	                 UPI	                    Payment is successful.
+TC08 – Place Order                   Complete details → Confirm order      Valid order details     	Order is placed and confirmation is shown.
+
+4.
+Create a simple Requirement Traceability Matrix (RTM) mapping at least 3 requirements from your app to the test cases you wrote.<br><br><em><strong>Hint:</strong> Use a table format: Requirement ID, Description, Test Case IDs.</em>
+
+Answer:
+Requirement Traceability Matrix (RTM) – Zomato
+
+Requirement ID        	Requirement                         	Test Case ID
+R01                   	User can search for restaurants.	    TC01
+R02                   	User can add food to the cart.	      TC02
+R03                   	User can make payment.              	TC07
+
+5.
+Imagine you executed your test cases and found 2 bugs. Write defect reports for both, including steps to reproduce, expected vs actual results, and severity. Then, prepare a brief final test report summarizing your testing process and results.
+
+Answer:
+Bug 1 – Payment Problem
+Steps: Add food → Go to payment → Pay.
+Expected: Payment should work.
+Actual: Payment fails.
+Severity: High.
+
+Bug 2 – Wrong Cart Total
+Steps: Add food → Open cart.
+Expected: Correct total should be shown.
+Actual: Wrong total is shown.
+Severity: Medium.
+
+Final Test Report
+App: Zomato
+Tests Done: 8
+Bugs Found: 2
+Result: Fix the bugs and test again before release.
