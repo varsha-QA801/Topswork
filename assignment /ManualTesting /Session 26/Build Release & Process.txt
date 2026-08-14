@@ -1,0 +1,61 @@
+1.
+Create a simple release readiness checklist for a new version of a food delivery app (like Zomato or Swiggy) that includes at least 8 key items QA should verify before the release goes live.
+
+Answer:
+Food Delivery App – Release Checklist
+
+Login – Users can log in and sign up.
+Search – Restaurants and food can be searched.
+Cart – Items can be added and removed.
+Order – Users can place orders.
+Payment – Payments work correctly.
+Tracking – Users can track their orders.
+Notifications – Order updates are received.
+Testing – No major bugs are present.
+Devices – App works on Android and iOS.
+Final Check – App is ready to go live.
+
+2.
+Describe the difference between a build cycle and a release cycle using an example from any popular app you use (such as Instagram or Paytm), and explain how QA is involved at each stage.
+
+Answer:
+Build Cycle vs Release Cycle
+
+Build Cycle:
+Developers create a new app version.
+QA tests the new version.
+QA reports bugs.
+Developers fix the bugs.
+
+Release Cycle:
+QA does the final testing.
+The team checks for major bugs.
+The app is made ready for users.
+The new version is released.
+
+Example: For Instagram, a new feature is first built and tested. After it works properly, the updated app is released to users.
+
+3.
+Imagine your team is preparing to release a new movie booking feature in a BookMyShow-style app. List 5 specific tasks a QA should perform during the release process to ensure the feature is ready for users.<br><br><em><strong>Hint:</strong> Think about both functional and non-functional aspects.</em>
+
+Answer:
+Tasks – Movie Booking Release
+
+Test Movie Search – Check that users can find movies correctly.
+Test Seat Booking – Check that users can select and book seats.
+Test Payment – Check that payments work correctly.
+Test App Performance – Make sure the app works quickly and does not crash.
+Final Bug Check – Make sure there are no major bugs before release.
+
+4.
+Given this scenario: During the release cycle of a Flipkart-like shopping app, a critical bug is found in the payment gateway just before release. Write the steps a QA should follow to report the issue and help the team decide whether to proceed with the release or not.
+
+Answer:
+
+Steps:
+Check the bug – Test the payment problem again.
+Report it – Create a JIRA bug with details.
+Mark it Critical – Payment is an important feature.
+Tell the team – Inform developers and managers.
+Test the fix – Check payment after the bug is fixed.
+Final decision – Release only if the payment works properly. If not, delay the release.
