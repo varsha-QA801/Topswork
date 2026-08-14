@@ -2,12 +2,87 @@
 Draw the V-Model diagram on paper or using any digital tool, and clearly label each phase with both the developer and tester roles involved at each step.
 
 Answer:
+V-Model
+        DEVELOPMENT              TESTING
+
+
+Requirements  ───────────────►  Acceptance Testing
+     ↓                                ↑
+System Design ───────────────►  System Testing
+     ↓                                ↑
+Architecture Design ─────────►  Integration Testing
+     ↓                                ↑
+Module Design ───────────────►  Unit Testing
+     ↓                                ↑
+          Coding
+
+Roles:
+
+Requirements: Developer + Tester
+System Design: Developer + Tester
+Architecture Design: Developer + Tester
+Module Design: Developer + Tester
+Coding: Developer
+Unit Testing: Tester
+Integration Testing: Tester
+System Testing: Tester
+Acceptance Testing: Tester + Customer
+
+Development happens on the left side, and testing happens on the right side.
+
 2.
 Pick any app you use daily (like Zomato, Instagram, or Paytm) and write a short table mapping each SDLC phase (Requirement, Design, Coding, Testing, Deployment, Maintenance) to a real activity that would happen for that app.
 
 Answer:
+SDLC Example – Paytm
+
+1. Requirement: Decide what users need.
+2. Design: Plan the app screens.
+3. Coding: Developers create the feature.
+4. Testing: Test payment and other features.
+5. Deployment: Release the app to users.
+6. Maintenance: Fix bugs and give updates.
+
 
 3.
 For each phase of the V-Model, list one specific testing activity that should be performed, using examples from a food delivery app (like Swiggy or Zomato).<br><br><em><strong>Hint:</strong> For example, during 'System Testing', you might test if the order placement works end-to-end.</em>
+
+Answer:
+Food Delivery App
+
+Requirement: Check order requirements.
+Design: Prepare test cases.
+Coding: Check the code.
+Unit Testing: Test each feature separately.
+Integration Testing: Test order and payment together.
+System Testing: Test the complete app.
+Acceptance Testing: Check if the app meets user needs.
+
+
 4.
 Compare the V-Model and RAD Model by listing 3 strengths and 2 weaknesses of each, focusing on how testing is handled in both models.
+
+Answer:
+V-Model vs RAD Model
+
+V-Model
+-------
+Strengths:
+Testing starts early.
+Testing is well planned.
+Bugs are found early.
+
+Weaknesses:
+Changes are difficult.
+Not good for changing requirements.
+
+RAD Model
+---------
+Strengths:
+Testing is done often.
+Gets quick user feedback.
+Faster development.
+
+Weaknesses:
+Testing may be rushed.
+Not suitable for big projects.
