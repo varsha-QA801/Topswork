@@ -1,0 +1,87 @@
+1.
+List the 7 main phases of the Software Testing Life Cycle (STLC) and write one line describing what happens in each phase for a Login feature like the one in Instagram or Paytm.
+
+Answer:
+7 Phases of STLC – Login Feature
+
+Requirement Analysis – Check login requirements like username and password.
+Test Planning – Decide what and how to test.
+Test Case Design – Create login test cases.
+Test Environment Setup – Prepare the testing system.
+Test Execution – Run the login test cases.
+Defect Reporting – Report login bugs found during testing.
+Test Closure – Check results and complete testing.
+
+2.
+For a Flipkart-style Login module, create a table that lists the entry and exit criteria for each STLC phase (Planning, Monitoring, Analysis, Design, Implementation, Execution, Reporting, Closure).
+
+Answer:
+Flipkart Login – STLC
+
+Phase	                              Entry	                                 Exit
+Planning	                      Requirements	                          Plan ready
+Monitoring                      Testing starts	                        Progress checked
+Analysis                       	Requirements clear	                    Scenarios ready
+Design                         	Scenarios ready	                        Test cases ready
+Implementation	                Test cases	                            Test setup ready
+Execution	                      Setup ready	                            Tests done
+Reporting                     	Test results	                          Report ready
+Closure                        	Testing done	                          Testing closed
+
+
+3.
+Write a sample Test Plan section (max 1 page) for the Login module of a Zomato-like app, including objectives, scope, resources, and schedule.<br><br><em><strong>Hint:</strong> Focus on what will be tested, who will test, and the timeline for testing the Login feature.</em>
+
+Answer:
+App: Zomato-like Food Delivery App
+
+1. Objective
+To check that users can log in safely and successfully.
+
+2. Scope
+Test:
+Email/phone login
+Password
+OTP login
+Login button
+Wrong login details
+Logout
+
+3. Resources
+Tester: QA Tester
+Tools: Jira, Excel
+Devices: Mobile and Laptop
+
+4. Schedule
+Day 1: Prepare test cases
+Day 2: Execute tests
+Day 3: Report and retest bugs
+
+Expected Result: Login should work correctly without errors.
+
+4.
+Design 3 test cases for the Login module of a BookMyShow-style app, covering positive, negative, and boundary scenarios. Include test steps, expected results, and actual results columns.
+
+Answer:
+Login Test Cases
+
+Test Case                    Type            	Steps	                  Expected	                Actual
+Valid Login            	    Positive      	Enter correct details 	 Login successful	     Login successful
+                                                 → Login
+Wrong Password              Negative        Enter wrong password       Error shown	       Error shown
+                                                 → Login
+Empty Fields	              Boundary	      Leave fields empty         Message shown	     Message shown
+                                                   → Login	
+
+                                                   
+5.
+After executing your test cases, write a short Test Summary Report for the Login module, mentioning how many tests passed, failed, and any major issues found.<br><br><em><strong>Hint:</strong> Imagine you are sending this summary to your team lead after finishing Login testing.</em>
+
+Answer:
+Test Summary Report – Login
+ 
+Total Tests: 3
+Passed: 2
+Failed: 1
+Major Issue: Login fails with an incorrect password message not showing properly.
+Status: Testing completed with 1 issue.
