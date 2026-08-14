@@ -1,0 +1,72 @@
+1.
+Log in to your JIRA test project and create a new test case for the 'Add to Cart' feature found in shopping apps like Flipkart or Myntra, including a clear summary and description.
+
+Answer:
+JIRA Test Case – Add to Cart
+Summary: Add a product to the cart
+
+Description:
+Check that a user can select a product and add it to the shopping cart successfully.
+
+Expected Result:
+The selected product should appear in the cart with the correct name, price, and quantity.
+
+
+2.
+Link your newly created 'Add to Cart' test case to an existing user story or epic in JIRA that represents the shopping cart module.<br><br><em><strong>Hint:</strong> Use the 'Link Issue' or 'Associate to Story' option in the test case details.</em>
+
+Answer:
+Link Test Case
+
+Test Case: Add Product to Cart
+Link To: Shopping Cart User Story
+Action: Use Link Issue in Jira.
+Result: The test case is connected to the shopping cart story.
+
+
+3.
+Add at least two relevant attachments (such as a screenshot of the cart UI and a sample test data file) to your 'Add to Cart' test case in JIRA.
+
+Answer:
+
+Test Case: Add Product to Cart
+Cart UI Screenshot – Shows the shopping cart screen.
+Test Data File – Contains sample product and cart details.
+
+Both files are attached to the Add to Cart test case in Jira.
+
+
+4.
+Write three acceptance criteria for the 'Add to Cart' test case in JIRA, making sure they are clear, measurable, and relevant to typical e-commerce app behavior.
+
+Answer:
+Acceptance Criteria – Add to Cart
+Product is added when the user clicks Add to Cart.
+Cart shows the correct product, price, and quantity.
+Cart total price updates correctly after adding the product.
+
+
+5.
+Choose a signup or login test case you entered in JIRA and revise it to add more technical depth: include detailed preconditions, test data, and expected results for both valid and invalid input scenarios.<br><br><em><strong>Hint:</strong> Think about edge cases like blank fields, special characters, or already registered emails.</em>
+
+Answer:
+Test Case: User Signup
+
+1. Preconditions
+Signup page is open.
+User is not logged in.
+
+2. Test Data
+Name: Rahul
+Email: rahul@test.com
+Password: Test@1234
+
+3. Valid Test
+Enter valid details.
+Result: Account is created.
+
+4. Invalid Tests
+Blank fields → Show error.
+Wrong email → Show email error.
+Weak password → Show password error.
+Existing email → Show “Email already registered” message.
