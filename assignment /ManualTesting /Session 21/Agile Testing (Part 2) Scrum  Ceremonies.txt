@@ -1,0 +1,116 @@
+1.
+Create a sample Sprint Board in JIRA using the Scrum template and add at least 5 tasks for a 'Food Delivery App' sprint (e.g., menu display, order placement, payment integration, delivery tracking, user reviews).
+
+Answer:
+JIRA Scrum Board – Food Delivery App
+Project: Food Delivery App
+Sprint: Sprint 1
+
+Tasks
+1. Menu Display
+Show food items.
+Show food names, prices, and pictures.
+
+2. Order Placement
+Let users select food.
+Add food to the cart.
+Allow users to place an order.
+
+3. Payment
+Add online payment.
+Allow users to pay for their orders safely.
+
+4. Delivery Tracking
+Show the order status.
+Let users see where their order is.
+
+5. User Reviews
+Let users give ratings.
+Let users write reviews about food and restaurants.
+JIRA Board
+
+To Do → In Progress → Testing → Done
+
+
+2.
+Write a script for a Daily Standup meeting for a team building a new feature in a music streaming app like Spotify, covering what you did yesterday, what you plan to do today, and any blockers.
+
+Answer:
+Daily Standup Meeting
+Feature: New Playlist Feature
+
+1. Yesterday
+Developer: Worked on the playlist.
+Designer: Designed the playlist screen.
+Tester: Tested the search feature.
+
+2. Today
+Developer: Finish the playlist.
+Designer: Complete the design.
+Tester: Test the playlist.
+
+3. Blockers
+Developer needs the new design.
+Tester needs the latest app version.
+Designer has no blocker.
+
+
+3.
+Simulate a Sprint Planning meeting by listing 3 user stories for a Flipkart-style shopping cart feature and breaking each story into smaller tasks with clear acceptance criteria.<br><br><em><strong>Hint:</strong> Think about tasks like 'Add to Cart', 'Update Quantity', and 'Remove Item'.</em>
+
+Answer:
+Sprint Planning – Flipkart Style Shopping Cart
+
+1. Add to Cart
+Task: Add a product to the cart.
+Acceptance: The product appears in the cart with its price and quantity.
+
+2. Update Quantity
+Task: Change the product quantity.
+Acceptance: The quantity and total price change correctly.
+
+3. Remove Item
+Task: Remove a product from the cart.
+Acceptance: The product is removed and the total price is updated.
+
+
+4.
+After completing a mock sprint for a movie ticket booking app (like BookMyShow), write a brief Sprint Review summary describing what features were delivered, what went well, and what feedback you received from stakeholders.
+
+Answer:
+Sprint Review – Movie Ticket App
+
+Features Completed:
+Search movies
+Choose a movie and show
+Select seats
+Book tickets
+Get booking confirmation
+
+What Went Well:
+Tasks were finished on time.
+The app was easy to use.
+Testing was successful.
+
+Stakeholder Feedback:
+Add more payment methods.
+Make seat selection easier.
+Add movie ratings and reviews.
+
+
+5.
+Conduct a Sprint Retrospective for a Zomato-style restaurant search sprint by listing 2 things that went well, 2 things that could be improved, and 1 action item for the next sprint.
+
+Answer:
+Sprint Retrospective – Restaurant Search
+
+Went Well:
+Search worked properly.
+Work was finished on time.
+
+Needs Improvement:
+Make search faster.
+Improve team communication.
+
+Action for Next Sprint:
+Make the search faster and have better team communication.
