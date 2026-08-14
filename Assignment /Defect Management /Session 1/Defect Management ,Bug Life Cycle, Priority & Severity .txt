@@ -1,0 +1,94 @@
+1.
+Pick any mobile app you use daily (like Zomato, Instagram, or Paytm), open its login or signup form, and identify 5 possible defects in the UI or workflow. Write each defect as a clear defect statement.
+
+Answer:
+App: Zomato
+OTP error – Correct OTP may show as wrong.
+Login button error – Login button may not work.
+Error message issue – Message may be unclear.
+Resend OTP issue – New OTP may not arrive.
+Keyboard issue – Keyboard may hide the input box.
+
+2.
+For each defect you found in the previous task, assign a Severity level (Blocker, Critical, Major, Minor, Trivial) and a Priority level (High, Medium, Low). Briefly justify your choice for one defect where severity and priority are different.<br><br><em><strong>Hint:</strong> Think about how badly the defect impacts users (severity) versus how quickly it should be fixed (priority).</em>
+
+Answer:
+Zomato – Defect Severity & Priority
+
+1. OTP error
+Severity: Critical
+Priority: High
+
+2. Login button not working
+Severity: Blocker
+Priority: High
+
+3. Error message unclear
+Severity: Minor
+Priority: Medium
+
+4. Resend OTP not working
+Severity: Major
+Priority: High
+
+5. Keyboard hides input box
+Severity: Minor
+Priority: Low
+
+3.
+Draw a Bug Life Cycle diagram showing all the main states (New, Assigned, Open, Fixed, Retest, Verified, Closed, Rejected, Deferred, Duplicate, Not a Bug) and the transitions between them. You can use pen-paper and upload a photo, or use any diagram tool you like.
+
+Answer:
+Bug Life Cycle Diagram
+
+              ┌─────────┐
+              │   New   │
+              └────┬────┘
+                   ↓
+              ┌──────────┐
+              │ Assigned │
+              └────┬─────┘
+                   ↓
+              ┌─────────┐
+              │  Open   │
+              └────┬────┘
+                   ↓
+              ┌─────────┐
+              │  Fixed  │
+              └────┬────┘
+                   ↓
+              ┌─────────┐
+              │ Retest  │
+              └────┬────┘
+                 ↓     ↓
+          ┌────────┐  ┌────────┐
+          │Verified│  │  Open  │
+          └────┬───┘  └────────┘
+               ↓
+          ┌────────┐
+          │ Closed │
+          └────────┘
+
+Other possible states:
+Open → Rejected
+Open → Deferred
+Open → Duplicate
+Open → Not a Bug
+
+flow:
+New → Assigned → Open → Fixed → Retest → Verified → Closed
+
+Other outcomes:
+Open → Rejected / Deferred / Duplicate / Not a Bug
+
+4.
+Write a short scenario where a defect in a UPI payment feature (like in PhonePe or Paytm) is found very late—after the app is live. Explain in 4-5 lines how the cost and impact of fixing this defect would be different if it was caught during development instead.
+
+Answer:
+UPI Payment Defect
+
+Problem: Money is deducted, but the UPI payment fails.
+After Release: Fixing the problem is costly and may affect many users.
+Impact: Users may lose money or trust in the app.
+During Development: The defect would be easier and cheaper to fix.
+Conclusion: Finding bugs early saves time, money, and effort.
