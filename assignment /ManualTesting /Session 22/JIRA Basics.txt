@@ -1,0 +1,62 @@
+1.
+Sign up for a free Jira account (cloud version), create a new project using the Scrum template, and take a screenshot of your empty Scrum board.
+
+Answer:
+Jira Scrum Board
+Create a free Jira Cloud account.
+Create a new project.
+Select the Scrum template.
+Give the project a suitable name.
+Open the Backlog or Board.
+Keep the board empty.
+Take a screenshot of the empty Scrum board.
+Submit the screenshot as proof.
+
+2.
+In your Jira Scrum board, create an epic named 'Food Delivery App Features' and add three user stories under it: 'As a user, I want to search for restaurants', 'As a user, I want to track my order in real-time', and 'As a user, I want to pay using UPI'.
+
+Answer:
+Jira Task
+
+Epic: Food Delivery App Features
+
+User Stories:
+Search for restaurants.
+Track the order live.
+Pay using UPI.
+
+Steps: Create the epic → Add the 3 stories → Save.
+
+
+3.
+For the user story 'As a user, I want to search for restaurants', add two sub-tasks: 'Design search UI' and 'Integrate restaurant API'.
+
+Answer:
+Sub-Tasks
+
+User Story: Search for restaurants
+Design search UI
+Integrate restaurant API
+
+
+4.
+Change the status of one of your sub-tasks from 'To Do' to 'In Progress' and then to 'Done' using the Jira board workflow.<br><br><em><strong>Hint:</strong> Drag and drop the task across columns to update its status.</em>
+
+Answer:
+Select one sub-task.
+Move it from To Do → In Progress.
+Then move it from In Progress → Done.
+
+Result: Sub-task status changed to Done successfully.
+
+
+5.
+Explore the different issue types available in Jira (Epic, Story, Task, Bug). For each type, create a sample issue in your project and write one line explaining when you would use that issue type in a real Zomato or Swiggy-like app.
+
+Answer:
+
+Types:
+Epic: Food Delivery App – Used for a big feature.
+Story: Search Restaurants – Used for a user feature.
+Task: Add Search Bar – Used for a small work item.
+Bug: Payment Error – Used to fix a problem in the app.
