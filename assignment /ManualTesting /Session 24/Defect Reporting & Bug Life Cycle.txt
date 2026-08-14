@@ -1,0 +1,82 @@
+1.
+Sign up for a free Jira account, create a new project named 'Food Delivery App QA', and add a sample bug titled 'Order status not updating after payment'.
+
+Answer:
+Task:
+Create a free Jira account.
+Create project: Food Delivery App QA
+Create Bug: Order status not updating after payment
+
+Result: Project and sample bug were created successfully.
+
+
+2.
+Fill out a defect report in Jira for a bug you found in any app you use daily (like Zomato, Flipkart, or Paytm), using all main fields: Summary, Description, Steps to Reproduce, Expected Result, Actual Result, Severity, and Priority.<br><br><em><strong>Hint:</strong> Use a real or imagined bug, but make the details specific and realistic.</em>
+
+Answer:
+
+Defect Report:
+
+Summary: Order status not updating
+Description: Order status does not change after payment.
+Steps: Make payment → Open order → Check status.
+Expected: Status should show Order Confirmed.
+Actual: Status still shows Payment Processing.
+Severity: Medium
+Priority: High
+
+Result: Bug report created successfully.
+
+
+3.
+Given these three bugs found in a movie ticket booking app: (1) Payment fails for UPI, (2) Movie poster image is blurry, (3) App crashes if you book more than 10 tickets at once — classify each bug as High/Medium/Low Severity and High/Medium/Low Priority, and justify your choices.
+
+Answer:
+Bug Classification
+
+Bug	                        Severity	                     Priority                     	Reason
+Payment fails for UPI	        High	                         High               	Users cannot complete payment.
+Movie poster is blurry	      Low	                           Low	                It does not affect booking.
+App crashes after booking     High	                         High                	App crashes and booking cannot continue.
+10+ tickets
+
+Simple rule:
+
+High: Major problem or app crash
+Medium: Affects some functionality
+Low: Small visual or minor problem
+
+
+4.
+Draw the complete bug life cycle for a typical defect in Jira, labeling each stage (for example: New, Assigned, In Progress, Fixed, Retest, Closed, Reopened) and describing what happens at each step.<br><br><em><strong>Hint:</strong> You can use a simple flowchart tool or draw and scan a diagram, but your answer must include both the diagram and brief descriptions.</em>
+
+Answer:
+Bug Life Cycle
+
+New → Assigned → In Progress → Fixed → Retest → Closed
+                                      ↓
+                                  Reopened
+                                  
+New: Bug is reported.
+Assigned: Bug is given to developer.
+In Progress: Developer is fixing it.
+Fixed: Bug is fixed.
+Retest: Tester checks it again.
+Closed: Bug is working correctly.
+Reopened: Bug is still there.
+
+
+5.
+Download a sample defect template from the internet (or use a template provided in class), and fill it out for a bug you noticed in any social media app (like Instagram or WhatsApp), making sure to include Severity and Priority fields.
+
+Answer:
+Defect Report:
+
+App: Instagram
+Bug: Story not uploading
+Steps: Open Instagram → Add Story → Upload photo
+Expected: Story should upload.
+Actual: Story does not upload.
+Severity: Medium
+Priority: High
+Status: New
