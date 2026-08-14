@@ -1,0 +1,84 @@
+1.
+Create a Bugzilla account using your college or personal email, then log in and take a screenshot of your Bugzilla dashboard after successful login.
+
+Answer:
+
+1.Open the Bugzilla website.
+2.Click Create an Account.
+3.Enter your college or personal email.
+4.Verify your email and create a password.
+5.Log in using your email and password.
+6.After successful login, the Bugzilla dashboard/home page will appear.
+7.Take a screenshot of the dashboard.
+8.Submit the screenshot as proof of successful login.
+
+
+2.
+Pick any mobile app you use daily (such as Instagram, Zomato, or Paytm) and identify a real or imagined bug you have experienced — log this bug in Bugzilla with a clear summary, detailed steps to reproduce, expected vs actual result, and attach a screenshot or mock image showing the issue.
+
+Answer:
+App: Instagram
+Bug: Like button not working properly.
+
+Steps:
+1.Open Instagram.
+2.Open any post.
+3.Click the Like button.
+4.Check the like button.
+
+Expected Result:
+Post should be liked and should become active.
+
+Actual Result:
+Sometimes the button does not change.
+
+Priority: Medium
+Severity: Medium
+Screenshot: Attach a screenshot of the issue
+
+
+3.
+Log two more defects in Bugzilla for different apps (for example, a payment failure in PhonePe or a wrong item added in Flipkart cart), making sure to select appropriate Severity and Priority for each defect and fill out the Module and Build/Version fields.
+
+Answer:
+Defect 1 – PhonePe
+-----------------
+Summary: Payment fails after clicking Pay.
+Module: Payment
+Severity: High
+Priority: High
+Build/Version: Latest Version
+Expected: Payment should be successful.
+Actual: Payment fails.
+
+Defect 2 – Flipkart
+-------------------
+Summary: Wrong item is added to cart.
+Module: Shopping Cart
+Severity: Medium
+Priority: High
+Build/Version: Latest Version
+Expected: Selected item should be added.
+Actual: A different item is added.
+
+
+4.
+Update the status of one of your logged defects in Bugzilla from 'New' to 'Assigned', then to 'Fixed', 'Retest', and finally 'Closed', adding a brief comment at each stage describing what happened.<br><br><em><strong>Hint:</strong> Use the 'Add Comment' box in Bugzilla to note what action was taken at each step.</em>
+
+Answer:
+Bug: PhonePe Payment Failure
+
+New – Bug reported.
+Assigned – Bug assigned to developer.
+Fixed – Bug fixed by developer.
+Retest – Bug tested again.
+Closed – Bug works correctly, so it is closed.
+
+
+5.
+Use Bugzilla's search and filter features to find all defects you have logged that are currently not 'Closed', and take a screenshot showing the filtered results.<br><br><em><strong>Hint:</strong> Try filtering by your user ID and by defect status.</em>
+
+Answer:
+I used Bugzilla's Search/Filter option and selected my User ID. Then I filtered the defects by status not Closed.
+Result: All my defects that are still open were displayed.
+I took a screenshot of the filtered results and attached it as proof.
