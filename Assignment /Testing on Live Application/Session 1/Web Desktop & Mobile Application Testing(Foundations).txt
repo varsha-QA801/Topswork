@@ -1,0 +1,65 @@
+1.
+Open the Flipkart website in your browser and test the main navigation bar — click each menu item (like Electronics, Fashion, Home, etc.) and verify that the URL changes correctly and the expected content loads.
+
+Answer:
+Menu Item           URL Change	            Content Loaded	                 Result
+Electronics         	 Yes           	Electronics products/categories       	Pass
+Fashion	               Yes           	Fashion products/categories	            Pass
+Home                	 Yes           	Home & furniture products             	Pass
+Appliances	           Yes	          Appliance products/categories         	Pass
+Beauty, Toys & More	   Yes            Beauty, toys and related products	      Pass
+Grocery             	 Yes           	Grocery products/categories           	Pass
+
+
+2.
+Pick any sign-up or login form from a popular web app you use (like Zomato, Instagram, or Paytm) and test its field validation by entering invalid email addresses, leaving required fields blank, and submitting — note the error messages shown for each case.
+
+Answer:
+Login Form Validation – Instagram
+
+Test Case                	Test Data	               Expected Result                	Actual Result	               Status
+Invalid Email              	abc@	                 Show email error	                Email error shown	            Pass
+Empty Email	                Blank	                 Show required message	          Required message shown	      Pass    
+Empty Password            	Blank                  Show required message	          Required message shown	      Pass
+Wrong Login Details	     Wrong email/password	     Show login error	                Login error shown           	Pass
+
+
+3.
+Install the Notepad++ desktop application on your Windows machine, then test if the installer correctly creates a Start Menu shortcut and check if you can save a text file to your Documents folder.
+
+Answer:
+Application: Notepad++
+
+Test	            Action	                    Expected Result	                     Actual Result	               Status
+1	            Install Notepad++	         Application installs successfully	    Installed successfully	          Pass
+2	            Check Start Menu	         Shortcut should be created	            Shortcut created	                Pass
+3	            Open Notepad++	           Application should open	              Opened successfully	              Pass
+4            	Save a text file in 	     File should save successfully	        File saved successfully	          Pass
+              documents
+
+
+4.
+Download and install the 'Spotify Lite' APK on an Android emulator (like BlueStacks or Android Studio emulator), then verify that the app launches, the login screen appears, and the UI elements (logo, fields, buttons) are properly displayed on your mobile screen.<br><br><em><strong>Hint:</strong> If you don't have a real device, use any free Android emulator and a safe APK download source.</em>
+
+Answer:
+Application: Spotify Lite
+
+Test	              Action	                      Expected Result	                          Actual Result	              Status
+1               	Install APK	                 App installs successfully	              Installed successfully	         Pass
+2	                Open app	                   App should open	                        App opened	                     Pass
+3	                Check login screen         	 Login screen should appear	              Login screen appeared	           Pass
+4	                Check logo and fields        UI should display properly	              Logo and fields displayed	       Pass
+5                 Check buttons               Buttons should be visible                	Buttons displayed properly	     Pass
+
+
+5.
+Test the window handling of the Windows Calculator app by opening multiple instances (if possible), switching between them, and checking if calculations in one window affect the others.
+
+Answer:
+Application: Windows Calculator
+
+Test	              Action                           	Expected Result	                  Actual Result	                   Status
+1	             Open Calculator                  	   Calculator should open	            Opened successfully	              Pass
+2	             Open multiple windows                 Multiple windows should open	      Windows opened	                  Pass
+3	             Switch between windows	               User should switch easily	        Switched successfully	            Pass
+4	             Do calculations in one window	       Other window should not change 	  Other window stayed unchanged	    Pass
