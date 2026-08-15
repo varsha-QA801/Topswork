@@ -1,0 +1,13 @@
+1.
+Open Zomato.com in Chrome, press F12 to open DevTools, and use the device toolbar to simulate the site on iPhone 12, iPad, and a standard desktop. List 3 layout or UI changes you observe between these views.
+
+Answer:
+
+2.
+Pick any Flipkart product page and resize your browser window from desktop width down to mobile width. Note at which pixel widths (breakpoints) major layout shifts happen (e.g., menu collapses, grid changes to list). List the breakpoints and describe what changes at each.
+3.
+Open Myntra.com in both Chrome and Firefox browsers on your laptop. Take screenshots of the homepage in both browsers at desktop size and compare them. Identify and describe 2 differences in how elements (fonts, buttons, images, etc.) are rendered.
+4.
+Use BrowserStack (or CrossBrowserTesting) to test BookMyShow.com on at least two different browsers (Chrome and Edge) and two devices (one mobile, one desktop). Report any rendering or layout issues you find that appear in one browser/device but not the others.<br><br><em><strong>Hint:</strong> Focus on navigation menus, banners, and buttons for visible differences.</em>
+5.
+Identify 5 responsive UI issues on any one of your favorite apps' web versions (e.g., Spotify, Instagram, Swiggy) using Chrome DevTools device simulation. For each issue, describe the problem, the device size where it appears, and suggest a possible fix.
