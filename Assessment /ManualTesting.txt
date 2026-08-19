@@ -6,18 +6,21 @@ define two entry criteria and two exit criteria you would propose for a sprint, 
 testing in an Agile model fundamentally differs from testing in the Waterfall model.
 
 Answer:
-In Agile, testing should start from the beginning of the sprint. Testing and coding are done together.
+In Agile, testing starts from the beginning of the sprint. Testing is done along with development.
 
 Entry Criteria:
-1. The requirements are clear.
-2. The testing setup is ready.
+1. Requirements are clear.
+2. The feature is ready for testing.
 
 Exit Criteria:
-1. All important tests are completed.
-2. All major bugs are fixed.
+1. Testing is completed.
+2. Major bugs are fixed.
 
-Agile and Waterfall: In Agile, testing is done again and again during development. Testers and developers work together.
-In Waterfall, testing is done after development is finished. So, bugs may be found late.
+Agile vs Waterfall:
+Agile: Testing is done during development.
+Waterfall: Testing is done after development.
+
+Agile tests early, while Waterfall tests later.
 
 Question 2: Identify three non-functional testing types that are critical for this payment gateway
 scenario and justify why each cannot be skipped. Then apply the relevant principle from the 7
@@ -25,71 +28,61 @@ Key Principles of Testing that explains why attempting to test every possible tr
 combination is not feasible
 
 Answer:
-1. Performance Testing:
-It checks if the payment system can handle 5,000 users at one time without becoming slow or crashing.
+1. Performance Testing: Checks if the app can handle 5,000 payments at the same time.
+2. Security Testing: Checks if payment details are safe.
+3. Reliability Testing: Checks if the payment system works without failing.
 
-2. Security Testing:
-It checks if customer and payment details are safe from unauthorized people.
-
-3. Reliability Testing:
-It checks if the system can work properly for a long time without failing.
-
-Testing Principle – Exhaustive Testing is Impossible:
-It is not possible to test every possible transaction because there are too many combinations. So, testers should test the most important and risky cases.
+Testing Principle:
+Exhaustive testing is impossible. We cannot test every possible transaction because there are too many combinations. So, we test the important cases.
 
 Question 3: Using Equivalence Partitioning and Boundary Value Analysis, identify all valid and
 invalid equivalence partitions for this field, list the exact boundary values, and explain which
 technique offers better defect coverage for this specific scenario and why.
 
-Answer: Valid Equivalence Partitions:
+Answer:
+Promo code rule: 6–10 letters or numbers.
 
- -6–10 alphanumeric characters → Valid
- -Less than 6 characters → Invalid
- -More than 10 characters → Invalid
- -Special characters → Invalid
+Equivalence Partitioning:
+6–10 characters → Valid
+Less than 6 → Invalid
+More than 10 → Invalid
+Special characters/spaces → Invalid
 
 Boundary Values:
+5 → Invalid
+6 → Valid
+10 → Valid
+11 → Invalid
 
- -5 characters → Invalid
- -6 characters → Valid
- -10 characters → Valid
- -11 characters → Invalid
+Better technique:
+Boundary Value Analysis is better because it checks the limits of the field and can find errors quickly.
 
  Question 4: Classify both defects using the correct Severity and Priority labels from the
 categories taught in class. Explain the difference between Severity and Priority using these two
 defects as examples, and justify which defect must be fixed first — and why.
 
 Answer:
-
-Defect A:
-
+Defect A – App crashes
 Severity: High
 Priority: High
+It stops users from placing orders.
 
-The app crashes when users place an order.
-It affects many users.
-
-Defect B:
-
+Defect B – Logo is not straight
 Severity: Low
 Priority: Low
+It only affects the look of the app.
 
-The logo is only a little misaligned.
-The app still works normally.
+Severity: How serious the bug is.
+Priority: How quickly the bug should be fixed.
 
-Severity = How serious the problem is.
-Priority = How quickly it should be fixed.
-
-Defect A should be fixed first because it stops users from placing orders.
+First fix: Defect A, because it affects many users and stops orders.
 
 Question 5: Identify the two distinct types of testing that this scenario calls for, describe the
 specific checks you would perform for each type, and name the tools or methods a QA tester
 would use to efficiently replicate and document both issues.
 
 Answer:
-
 There are two types of testing:
-
 1. Cross-Browser Testing
 -Check the map on Chrome and Firefox.
 -Make sure it works on both.
@@ -100,24 +93,34 @@ There are two types of testing:
 -Make sure the page fits and works well.
 -Use Chrome Dev Tools.
 
+Tools:
+Chrome DevTools – to check screen size.
+Jira – to report the bug.
+
+In short:
+Browser → Compatibility Testing
+Screen size → Responsive Testing
+
 Question 6: Describe how you would use SQL to validate that the delivery address captured in the
 UI was correctly stored in the database. Write the SQL query structure you would use, and explain
 the difference between data verification and data validation in this context.
 
 Answer:
-SELECT user_id, address, city, pincode
-FROM delivery_addresses
-WHERE user_id = 101;
+I will check if the address entered in the app is saved correctly in the database.
 
-Expected Result:
-The query should return the same address, city, and pincode that the user entered in the UI.
+SQL:
+SELECT order_id, delivery_address
+FROM orders
+WHERE order_id = 12345;
 
-Difference
-Data Verification: Checks whether the UI data is stored correctly in the database.
-Data Validation: Checks whether the entered data is correct and follows required rules, such as valid pincode, required fields, and proper address format.
+Then compare the address in the app with the database.
+
+Verification: Checks if the address is correct.
+Validation: Checks if the address is in the correct format.
 
 Example:
-UI shows Ahmedabad, 380001 → Database should also contain Ahmedabad, 380001.
+App: “Ahmedabad, Gujarat”
+Database: “Ahmedabad, Gujarat” 
 
 
                                           Section B — Practical Testing Tasks
@@ -137,43 +140,36 @@ Identify 3 risks associated with testing the Login module and propose one concre
 strategy for each risk.
 
 Answer:
+Login Test Plan
 
-Login Module – Test Plan
+Test Objectives
+1. Check login requirements.
+2. Make login test cases.
+3. Test login with correct and wrong details.
+4. Find and fix major bugs.
 
-1. Test Objectives
-Check that valid users can log in successfully.
-Check that invalid login details show proper errors.
-Check that mandatory fields are validated.
-Ensure all critical login test cases pass before release.
+In-Scope
+1. Correct login.
+2. Wrong login.
+3. Empty fields.
 
-2. Scope
+Out-of-Scope
+1. Sign up.
+2. Food order.
+3. Payment.
 
-In-Scope:
-Valid login
-Invalid login
-Blank fields and error messages
-Password masking
+Entry Criteria
+1. Requirements are ready.
+2. Login page is ready.
 
-Out-of-Scope:
-Food ordering
-Payment
-Delivery tracking
+Exit Criteria
+1. All tests are done.
+2. Major bugs are fixed.
 
-3. Entry Criteria
-Login requirements are approved.
-Test environment and build are ready.
-Test data/accounts are available.
-
-4. Exit Criteria
-All critical test cases are executed.
-All critical test cases pass.
-No critical defects are open.
-
-5. Risks & Mitigation
-Risk                  	                                  Mitigation
-Test environment is down               	Inform the team and restore it before testing.
-OTP service fails                      	Use test accounts/OTP.
-Security issue occurs	                  Perform basic security testing and fix critical issues.
+Risks and Solutions
+1. Server problem → Check the server.
+2. Wrong test account → Use correct test accounts.
+3. Bug missed → Test many login cases.
 
 
 Task 2: EP & BVA Test Cases — Delivery Address Form
@@ -283,57 +279,43 @@ Write 3 SQL SELECT queries to validate that the order total, applied coupon code
 Prepare a complete defect report for one hypothetical UI–DB mismatch found during this exercise: include Steps to Reproduce, Expected Result, Actual Result, Severity, and Priority
 
 Answer:
+1. Web Testing
 
-1. Web Testing – 5 Checks
+1. Check all fields.
+2. Check all links.
+3. Check order details are saved.
+4. Check buttons are visible.
+5. Check error messages.
 
-No.	                            Check	                            Expected Result
-1	                      Check blank/invalid address	             Error message shown
-2	                      Click Back/Cart link	                   Correct page opens
-3	                      Click Place Order	                       Order is submitted
-4                      	Check buttons, price and payment         All display correctly
-                         option
-5	                      Enter invalid data	                     Proper error message shown
-
-2. Cross-Browser Testing
-
-No.	                          Scenario	               Chrome	           Firefox	           Edge
-1                         Open Checkout page	          Pass	             Pass	             Pass
-2                        	Enter details and place order	Pass	             Pass	             Pass
-3	                        Check price and buttons	      Pass	             Pass              Pass
-
-Expected: Page should work the same in all browsers.
-Difference: Small font or spacing differences may occur.
+2. Browser Testing
+TS01: Open Checkout on Chrome, Firefox and Edge → It should work on all.
+TS02: Click Place Order → It should work on all.
+TS03: Check price and payment → Details should be the same.
 
 3. SQL Queries
-Order Total
-SELECT order_total
-FROM orders
-WHERE order_id = 1001;
-Coupon Code
-SELECT coupon_code
-FROM orders
-WHERE order_id = 1001;
-Payment Method
-SELECT payment_method
-FROM orders
-WHERE order_id = 1001;
+Total:
+SELECT order_total FROM orders WHERE order_id = 101;
 
-Expected: Database values should match the values shown on the Checkout page.
+Coupon:
+SELECT coupon_code FROM orders WHERE order_id = 101;
 
-4. Defect Report
-Bug ID: BUG-001
-Title: Order total mismatch between UI and database
+Payment:
+SELECT payment_method FROM orders WHERE order_id = 101;
+
+Compare the database data with the Checkout page.
+
+4. Bug Report
+Bug: Total is different.
 
 Steps:
-Login.
-Add product to cart.
-Go to Checkout.
-Note the order total.
-Place the order.
-Check the database.
+1. Add food.
+2. Apply coupon.
+3. Open Checkout.
+4. Check total.
+5. Check database.
 
-Expected: UI and DB total should be the same.
-Actual: UI shows ₹500, but DB shows ₹550.
+Expected: Both totals should be the same.
+Actual: UI shows ₹450, database shows ₹500.
 
 Severity: High
 Priority: High
@@ -368,160 +350,8 @@ verifying and what the expected result should be.
 
 Answer:
 
-Mini Capstone Project – Food Delivery App
-1. Test Plan
 
-User Flow: Registration → Login → Browse → Place Order → Track Order
 
-Objectives:
-Check user registration.
-Check login.
-Check restaurant search.
-Check order placement.
-Check order tracking.
-
-In-Scope:
-Registration
-Login
-Restaurant search
-Cart and order
-Payment and tracking
-
-Out-of-Scope:
-Admin panel
-Restaurant owner panel
-Refund
-Delivery partner system
-
-Entry Criteria:
-Website is available.
-Requirements and test data are ready.
-
-Exit Criteria:
-All test cases are completed.
-Major bugs are fixed.
-
-Risks & Solutions:
-Risk	                              Solution
-Website may be down         	Check website before testing
-Test data may be wrong	      Prepare correct test data
-Payment may fail	            Use test payment details
-
-2. Test Cases:
-ID	                       Test Case	                           Input	                Expected Result	               Technique
-TC01                 	Valid registration	                     Valid details	           Account created	                EP
-TC02	                Invalid email	                              riya@	                Error shown	                      EP
-TC03	                Blank name	                                Blank	                Error shown	                      EP
-TC04                	9-digit phone                             987654321	               Error shown                      BVA
-TC05	                10-digit phone	                          9876543210	             Accepted	                        BVA
-TC06	                Valid login	                              Valid details           Login successful	                 EP
-TC07	                Wrong password	                          Wrong password	        Error shown	                       EP
-TC08	                Blank login                             	Blank	                  Error shown	                       EP
-TC09	                Search restaurant	                        Pizza	                  Results shown	                     EP
-TC10	                Invalid search	                          XYZ123	                No result	                         EP
-TC11	                Open restaurant                          	Select restaurant	      Page opens                         EP
-TC12	                Add food	                                Pizza                  	Added to cart                      EP
-TC13                	Add multiple food                        	3 items                	Items added	                       EP
-TC14                 	Valid coupon	                            SAVE20	                Discount applied	                 EP
-TC15                 	Invalid coupon	                          ABC123	                Error shown	                       EP
-TC16                	Select payment	                          UPI	                    UPI selected	                     EP
-TC17                	Place order                              	Valid details          	Order placed	                     EP
-TC18                	Missing address                          	Blank	                  Error shown	                       EP
-TC19                 	Order confirmation	                      Successful order	      Order ID shown	                   EP
-TC20                	Track order	                              Order ID	              Status shown	                     EP
-
-3. Decision Table – Coupon
-
-Condition                                                    	Result
-Valid coupon + minimum amount reached                   	Discount applied
-Invalid coupon	                                          Error shown
-Valid coupon + minimum amount not reached	                Error shown
-
-4. RTM
-Req ID	                         Requirement	                     Test Cases                 	Defect
-R01                           	 Registration	                     TC01-TC05	                   D01
-R02	                             Login	                           TC06-TC08	                   D02
-R03	                             Browse	                           TC09-TC11	                   D03
-R04	                             Cart/Coupon	                     TC12-TC15	                   D04
-R05                              Payment/Order	                   TC16-TC18	                   D05
-R06	                             Confirmation/Tracking	           TC19-TC20	                    —
-
-5. Defect Reports
-D01 – Registration
-Module: Registration
-Steps: Enter valid details → Click Register
-Expected: Account created
-Actual: Account not created
-Severity: High
-Priority: High
-
-D02 – Login
-Module: Login
-Steps: Enter valid login details → Login
-Expected: User logged in
-Actual: Error displayed
-Severity: High
-Priority: High
-
-D03 – Restaurant Search
-Module: Search
-Steps: Search Pizza
-Expected: Pizza restaurants shown
-Actual: No results
-Severity: Medium
-Priority: Medium\
-
-D04 – Coupon
-Module: Coupon
-Steps: Apply valid coupon
-Expected: Discount applied
-Actual: Discount not applied
-Severity: Medium
-Priority: High
-
-D05 – Order
-Module: Order
-Steps: Place order
-Expected: One order created
-Actual: Two orders created
-Severity: Critical
-Priority: High
-
-6. SQL Queries
-7. Check registered user
--- Verify that Riya is saved in the database.
-SELECT * FROM users
-WHERE email = 'riya@gmail.com';
-
-Expected: Riya's record is displayed.
-
-2. Check phone number
--- Verify the registered phone number.
-SELECT phone FROM users
-WHERE email = 'riya@gmail.com';
-
-Expected: 9876543210 is displayed.
-
-3. Check order
--- Verify that the user's order is saved.
-SELECT * FROM orders
-WHERE user_id = 101;
-
-Expected: Order record is displayed.
-
-4. Check coupon
--- Verify the coupon used for the order.
-SELECT coupon_code FROM orders
-WHERE order_id = 1001;
-
-Expected: Correct coupon code is displayed.
-
-5. Check payment
--- Verify the selected payment method.
-SELECT payment_method FROM orders
-WHERE order_id = 1001;
-
-Expected: Selected payment method is displayed.
 
                                        Section D — AI-Augmented Learning
                                        _________________________________
@@ -553,36 +383,8 @@ additions and changes clearly marked.
 version needed correction.
 
 Answer:
-1. AI Prompt
-Give me 10 simple test cases for the Schedule Order feature of a food delivery app. The user can schedule an order up to 7 days ahead. Include valid date/time, past date/time, more than 7 days, invalid dates, and notification. Use Test Case ID, Description, Test Steps, Expected Result.
 
-2. AI Test Cases
 
-ID                             	Description	                             Expected Result
-TC01	                      Schedule tomorrow                         	Order scheduled
-TC02	                      Schedule 3 days later	                      Order scheduled
-TC03                      	Schedule 7 days later                      	Order scheduled
-TC04	                      Schedule 8 days later                       Error shown
-TC05	                      Select past date	                          Error shown
-TC06	                      Select past time	                          Error shown
-TC07                      	Enter invalid date	                        Error shown
-TC08	                      Schedule valid order	                      Confirmation shown
-TC09	                      Schedule valid order                      	Notification received
-TC10	                      Schedule 1 day later	                      Order scheduled
-
-3. Added/Changed Cases
-
-ID	                             Status                         Test Case	                           Expected Result
-TC11	                           ADDED	                       Enter Feb 30                           	Error shown
-TC12                           	 ADDED	                       Enter April 31	                          Error shown
-TC13	                           ADDED	                       Schedule more than 7 days	              Error shown
-TC14	                          CHANGED	                       Select current/past time	                Error shown
-
-4. Short Note
-AI missed Feb 30 and April 31 cases.
-I added these cases and checked the 7-day limit.
-AI also did not clearly check the exact time at the 7-day boundary.
-Human testers are needed to find real-world and unusual cases.
 
 
 
