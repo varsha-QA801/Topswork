@@ -5,13 +5,11 @@ Answer:
 Application: Calculator APK
 Platform: Android Emulator
 
-Process:
-Downloaded a free Calculator APK.
-Started the Android emulator using Device Manager.
-Installed the APK.
-Opened the Calculator app.
-
-Status: PASS
+1. Download a free APK.
+2. Open the Android emulator
+3. Install the APK.
+4. Open the app.
+5. Check if it works.
 
 2.
 Open the installed app on your emulator, rotate the device from portrait to landscape and back, and note any UI issues or layout problems that appear.<br><br><em><strong>Hint:</strong> Use the emulator's rotate button to change orientation and take screenshots if you spot any glitches.</em>
@@ -19,12 +17,11 @@ Open the installed app on your emulator, rotate the device from portrait to land
 Answer:
 App: Calculator
 
-Opened the app in portrait mode.
-Rotated to landscape mode.
-Rotated back to portrait mode.
-Checked the screen and buttons.
-
-Result: PASS
+1. Open the app.
+2. Rotate to landscape.
+3. Rotate back to portrait.
+4. Check the screen.
+5. Result: App works properly.
 
 3.
 Simulate turning off the internet connection in your emulator, then try to use a feature in the app that requires network (like fetching data or logging in). Record the error message or behavior you observe.
@@ -32,12 +29,10 @@ Simulate turning off the internet connection in your emulator, then try to use a
 Answer:
 App: Calculator
 
-Turned off the internet on the emulator.
-Opened the app.
-Tried to use the online feature.
-The app could not load the feature and showed “No Internet Connection.”
-
-Result: PASS 
+1. Turn off the internet.
+2. Open the app.
+3. Try to use an online feature.
+4. Result: “No Internet” message appears.
 
 4.
 Test the login or registration flow of any installed app on both your emulator and a real Android phone (if available). Compare the experience and list at least two differences you notice in speed, UI, or notifications.
@@ -46,22 +41,17 @@ Answer:
 App: Calculator/Login App
 Devices: Android Emulator and Real Android Phone
 
-Speed: The real phone was faster.
-UI: The screen looked a little different on both devices.
-Notifications: Notifications came faster on the real phone.
-
-Result: The app worked on both devices. The real phone was smoother. 
+Emulator: App is slower.
+Real phone: App is faster.
+Emulator: Notifications may be delayed.
+Real phone: Notifications work normally.
 
 5.
 Pick any app you use daily (Instagram, Zomato, Paytm, etc.) and describe how you would test push notifications using both an emulator and a real device. Mention at least one limitation of emulators for this test.
 
 Answer:
 App: Instagram
-
-Test notifications on the emulator.
-Test the same notifications on a real phone.
-Check if the notifications appear correctly.
-Compare both devices.
-
-Limitation: The emulator may not receive notifications properly.
-Result: A real phone is better for testing notifications. 
+Send a notification.
+Check it on the emulator.
+Check it on a real phone.
+Limitation: Emulator may not show notifications correctly.
