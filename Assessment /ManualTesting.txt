@@ -238,35 +238,8 @@ Add a 'Defect ID' column and log at least 3 hypothetical defects against the app
 requirements, classifying each by severity level (S1–S4) with a one-line description.
 
 Answer:
-RTM – Order Placement
-Req      ID	Requirement	       Test Scenarios	    Defect ID
-R01	     Add item to cart     	TS01, TS02        	D01 – S2
-R02	     Apply coupon	         TS03, TS04        	D02 – S3
-R03     	Select payment       	TS05, TS06	            —
-R04     	Place order          	TS07, TS08	        D03 – S1
-R05     	View confirmation	    TS09, TS10            	—
-R06     	View order history	   TS11, TS12            	—
 
-Test Scenarios
-TS01: Add one item to cart.
-TS02: Add multiple items and check quantity.
-TS03: Apply a valid coupon.
-TS04: Apply an invalid coupon.
-TS05: Select Cash on Delivery.
-TS06: Select online payment.
-TS07: Place an order with valid details.
-TS08: Place an order with missing details.
-TS09: Check confirmation screen.
-TS10: Check order ID on confirmation screen.
-TS11: Check previous orders in history.
-TS12: Check new order in history.
 
-Defects
-D01 – S2: Cart quantity is not updated.
-D02 – S3: Wrong coupon discount is applied.
-D03 – S1: Payment is deducted twice.
-
-Traceability: Requirement → Test Scenario → Defect.
 
 
 Task 4: Web & Database Testing — Checkout Page
