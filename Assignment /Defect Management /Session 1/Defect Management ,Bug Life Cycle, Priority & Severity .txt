@@ -4,31 +4,35 @@ Pick any mobile app you use daily (like Zomato, Instagram, or Paytm), open its l
 Answer:
 App: Instagram Login – 5 Defects
 
-1. Login button does not work.
-2. Password is visible.
-3. Wrong password shows no error.
-4. Forgot Password does not work.
-5. Blank fields are accepted.
+1. Login works without entering details.
+2. Wrong email has no error message.
+3. Password can be seen by others.
+4. Signup works without all details.
+5. After login, the home page does not open.
 
 2.
 For each defect you found in the previous task, assign a Severity level (Blocker, Critical, Major, Minor, Trivial) and a Priority level (High, Medium, Low). Briefly justify your choice for one defect where severity and priority are different.<br><br><em><strong>Hint:</strong> Think about how badly the defect impacts users (severity) versus how quickly it should be fixed (priority).</em>
 
 Answer:
-1. Username is empty
-    Severity: High
-    Priority: High
-2. Password is empty
-    Severity: High
-    Priority: High
-3. Wrong password message
-    Severity: Low
-    Priority: Medium
-4. Password is visible
-    Severity: High
-    Priority: High
-5. Wrong email accepted
-    Severity: High
-    Priority: Low
+1. Login works without entering details
+Severity: High
+Priority: High
+
+2. Wrong email has no error message
+Severity: Low
+Priority: Medium
+
+3. Password can be seen by others
+Severity: High
+Priority: High
+
+4. Signup works without all details
+Severity: High
+Priority: High
+
+5. Home page does not open after login
+Severity: High
+Priority: High
 
 3.
 Draw a Bug Life Cycle diagram showing all the main states (New, Assigned, Open, Fixed, Retest, Verified, Closed, Rejected, Deferred, Duplicate, Not a Bug) and the transitions between them. You can use pen-paper and upload a photo, or use any diagram tool you like.
@@ -75,10 +79,5 @@ Not a Bug – Not a real problem.
 Write a short scenario where a defect in a UPI payment feature (like in PhonePe or Paytm) is found very late—after the app is live. Explain in 4-5 lines how the cost and impact of fixing this defect would be different if it was caught during development instead.
 
 Answer:
-UPI Payment Defect
 
-Problem: UPI payment fails.
-After launch: Users cannot pay.
-Impact: Users get upset
-Cost: Fixing it takes more time and money.
-If found early: It is easy and cheap to fix.
+After the app was live, a UPI payment defect was found. Money was deducted from the user, but the receiver did not get the money. This caused problems for many users and needed more time and money to fix. If this defect was found during development, it would be easier and cheaper to fix before users were affected.
