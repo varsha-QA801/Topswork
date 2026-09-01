@@ -1,0 +1,19 @@
+1.
+Write an SQL query to validate that every new user registration in a 'users' table has a unique email and a non-empty password field. Test your query by inserting both valid and invalid records, then verify the results.
+Answer:
+
+2.
+Simulate a 'Forgot Password' scenario for an e-commerce app by creating test data in a 'password_resets' table. Insert a record with an expired timestamp and another with a valid timestamp, then write SQL to fetch only the active reset requests.
+Answer:
+
+3.
+Perform negative SQL testing on a 'product_orders' table by attempting to insert an order with a non-existent product_id and a negative quantity. Observe and document the database's response or error messages.<br><br><em><strong>Hint:</strong> Check if foreign key and check constraints are enforced in your table schema.</em>
+Answer:
+
+4.
+Write a cleanup SQL script that deletes all test user accounts created for testing in the 'users' table, but keeps real accounts intact. Assume test accounts have emails ending with '@test.com'.
+Answer:
+
+5.
+Design a test data creation strategy for validating user order history: generate at least 5 users, each with 2-3 orders in the 'orders' table, and at least one user with no orders. Explain how this covers edge cases for order history features.
+Answer:
