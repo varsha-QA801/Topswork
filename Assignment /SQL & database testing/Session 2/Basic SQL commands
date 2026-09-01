@@ -2,18 +2,37 @@
 Given a sample 'users' table with columns (id, username, email, city, age, signup_date), write a SELECT query to display all usernames and emails of users who live in 'Ahmedabad'.
 Answer:
 
+SELECT username, email FROM users
+WHERE city = 'Ahmedabad';
+
 2.
 Write a SELECT query to find all users whose username starts with 'a' (case-insensitive), using the LIKE operator.
 Answer:
+
+SELECT * FROM users
+WHERE LOWER(username)LIKE 'a%';
 
 3.
 Write a SELECT query to list the distinct cities from the users table where at least one user is above 25 years old.
 Answer:
 
+SELECT DISTINCT city FROM users
+WHERE age > 25;
+
 4.
 Write a SELECT query to show the top 5 most recently signed-up users, displaying their username and signup_date, ordered by signup_date descending.<br><br><em><strong>Hint:</strong> Use ORDER BY and LIMIT together.</em>
 Answer:
 
+SELECT username, signup_date
+FROM users
+ORDER BY signup_date DESC
+LIMIT 5;
+
 5.
 Write a SELECT query to find all users whose age is between 18 and 22, and who live in either 'Surat' or 'Vadodara', displaying their username, city, and age.<br><br><em><strong>Constraint:</strong> Use BETWEEN and IN operators in your WHERE clause.</em>
 Answer:
+
+SELECT username, city, age
+FROM users
+WHERE age BETWEEN 18 AND 22
+AND city IN ('Surat', 'Vadodara');
