@@ -1,0 +1,26 @@
+                                                          Section A — Concept Application
+                                                          -------------------------------
+
+Question: What state should the defect move to after your retest reveals the fix was
+unsuccessful? Walk through the next three steps in the Bug Life Cycle for this defect, naming
+each state and identifying who is responsible at each step.
+
+Answer:
+1.Reopened – QA Tester:
+Tester finds the bug is not fixed.
+Changes status from Fixed → Reopened.
+
+2.Assigned/Open – Developer:
+Bug goes back to the developer.
+Developer checks and fixes the problem again.
+
+3.Fixed – Developer:
+Developer fixes the bug.
+Changes status to Fixed.
+Then QA tests it again.
+
+Question: Assign Severity (S1–S4) and Priority (P1–P3) to both defects and justify each
+assignment in one sentence. Then explain why a defect can have high Severity but low Priority —
+use defect (a) or (b) to illustrate your answer.
+
+Answer:
