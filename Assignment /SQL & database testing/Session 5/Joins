@@ -1,0 +1,19 @@
+1.
+Write an INNER JOIN query to fetch the order_id, customer_name, and product_name for all orders placed on your favorite food delivery app (imagine Swiggy or Zomato) using tables: Orders, Customers, and Products.
+Answer:
+
+2.
+Write a LEFT JOIN query to list all users from a Flipkart-style Users table and show their last order date from the Orders table, including users who have never placed an order.<br><br><em><strong>Hint:</strong> Check for NULL values in the order date to identify users with no orders.</em>
+Answer:
+
+3.
+Write a RIGHT JOIN query to display all products from a Myntra-style Products table and the name of the user who last bought each product from the Users table, including products that have never been purchased.
+Answer:
+
+4.
+Write a FULL JOIN query to combine all payment transactions from a Paytm Payments table and all refund records from a Refunds table, showing transaction_id, amount, and whether it's a payment, refund, or both.
+Answer:
+
+5.
+Write a SELF JOIN query on a BookMyShow-style Movies table to find all pairs of movies that share the same genre but have different movie_ids.<br><br><em><strong>Constraint:</strong> Do not show pairs where both movies are the same.</em>
+Answer:
