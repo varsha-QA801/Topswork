@@ -2,18 +2,53 @@
 Install MySQL Community Server or use an online SQL editor like db-fiddle.com, then create a new database named insta_clone_practice.
 Answer:
 
+CREATE DATABASE insta_clone_practice;
+
 2.
 Inside your insta_clone_practice database, create a table called users with columns: id (INT, primary key, auto-increment), username (VARCHAR), email (VARCHAR), and created_at (DATETIME).
 Answer:
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(100),
+    email VARCHAR(100),
+    created_at DATETIME
+);
 
 3.
 Insert 3 sample users into the users table with different usernames and emails, using SQL INSERT statements.
 Answer:
 
+INSERT INTO users (id, username, email, created_at) 
+VALUES 
+(1, 'rahul', 'rahul@gmail.com', '2026-09-01 10:00:00'), 
+(2, 'priya', 'priya@gmail.com', '2026-09-01 11:00:00'), 
+(3, 'amit', 'amit@gmail.com', '2026-09-01 12:00:00');
+
 4.
 Write a SQL SELECT query to fetch all users whose email ends with 'gmail.com' from the users table.<br><br><em><strong>Hint:</strong> Use the LIKE operator with a wildcard.</em>
 Answer:
 
+SELECT * FROM users
+WHERE email LIKE '%gmail.com';
+
 5.
 Create a comparison table (in any text editor) listing 3 differences between RDBMS (like MySQL) and NoSQL databases (like MongoDB), using real-world examples from apps like Instagram or WhatsApp.
 Answer:
+
+RDBMS vs NoSQL
+
+1. How data is stored
+RDBMS (MySQL): Data is stored in tables.
+NoSQL (MongoDB): Data is stored in documents.
+
+2. Data structure
+RDBMS: Structure is fixed.
+NoSQL: Structure is flexible.
+
+3. Real-world example
+MySQL: Can store Instagram user information like name, email, and followers.
+MongoDB: Can store WhatsApp messages where each message may have different information.
+
+
+
