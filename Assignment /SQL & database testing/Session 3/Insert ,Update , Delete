@@ -1,0 +1,49 @@
+1.
+Insert 3 new records into a 'playlist' table for a music app, each with playlist_id, user_id, playlist_name, and created_at fields.
+Answer:
+
+INSERT INTO playlist (playlist_id, user_id, playlist_name, created_at)
+VALUES
+(1, 101, 'My Songs', '2026-09-01 10:00:00'),
+(2, 102, 'Romantic Songs', '2026-09-01 11:00:00'),
+(3, 103, 'Workout Songs', '2026-09-01 12:00:00');
+
+2.
+Update the email and phone number for a user in the 'user_profile' table where the username is 'foodielover' (simulate a Zomato-style profile edit).
+Answer:
+
+UPDATE user_profile
+SET email = 'foodielover@gmail.com',
+    phone = '9876543210'
+WHERE username = 'foodielover';
+
+3.
+Delete all records from a 'sessions' table where the expiry_time is earlier than the current timestamp, simulating expired login sessions like in Paytm or Flipkart.
+Answer:
+
+DELETE FROM sessions
+WHERE expiry_time < CURRENT_TIMESTAMP;
+
+4.
+Insert test data into a 'login_attempts' table for 2 different users, including fields for user_id, attempt_time, and status (success/failure), to prepare for login module testing.<br><br><em><strong>Hint:</strong> Use different timestamps and both success and failure statuses for variety.</em>
+Answer:
+
+INSERT INTO login_attempts (user_id, attempt_time, status)
+VALUES
+(1, '2026-09-01 10:00:00', 'success'),
+(1, '2026-09-01 10:30:00', 'failure'),
+(2, '2026-09-01 11:00:00', 'failure'),
+(2, '2026-09-01 11:30:00', 'success');
+
+5.
+Update the 'playlist_name' in the 'playlist' table for a specific playlist_id, then verify the change by selecting the updated row.<br><br><em><strong>Constraint:</strong> Perform both the UPDATE and SELECT statements and check the result.</em>
+Answer:
+
+UPDATE playlist
+SET playlist_name = 'New Songs'
+WHERE playlist_id = 1;
+
+SELECT *
+FROM playlist
+WHERE playlist_id = 1;
+
