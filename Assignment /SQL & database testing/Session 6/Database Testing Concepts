@@ -2,19 +2,70 @@
 Create a new user registration form for a food delivery app (like Zomato) that saves user details (username, email, phone) to a MySQL database. After submitting the form, verify directly in the database that the new user record is created with correct values.
 Answer:
 
+1. Create table:
+CREATE TABLE Users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50),
+    email VARCHAR(100),
+    phone VARCHAR(15)
+);
+
+2. Insert user data:
+INSERT INTO Users (username, email, phone) VALUES ('xyz', 'xyz@gmail.com', '9876543210');
+
+3. Verify in database:
+SELECT * FROM Users WHERE email = 'xyz@gmail.com';
+
 2.
 Given a table 'orders' in a Flipkart-style database with fields: order_id, user_id, item_name, quantity, and status, write SQL queries to validate that all orders with status 'delivered' have a non-zero quantity and item_name is not NULL.<br><br><em><strong>Hint:</strong> Use SELECT queries with WHERE conditions to check for invalid data.</em>
 Answer:
+
+1. Check delivered orders with quantity = 0:
+
+SELECT * FROM orders
+WHERE status = 'delivered'
+AND quantity = 0;
+
+2. Check delivered orders where item_name is NULL:
+
+SELECT * FROM orders
+WHERE status = 'delivered'
+AND item_name IS NULL;
 
 3.
 Compare the displayed user profile data in your app (name, email, mobile) with the actual data stored in the backend database for the same user. Report any mismatches you find between UI and database values.<br><br><em><strong>Hint:</strong> Change a value in the database manually, refresh the UI, and observe if the change is reflected or not.</em>
 Answer:
 
+SELECT username, email, phone
+FROM Users
+WHERE user_id = 1;
+
+UPDATE Users
+SET username = 'Rahul'
+WHERE user_id = 1;
+
+SELECT username, email, phone
+FROM Users
+WHERE user_id = 1;
+
 4.
 Perform field-level validation for a 'playlist' table (like Spotify) with fields: playlist_id, playlist_name, created_by, created_at. Check if any records have empty playlist_name or invalid created_at dates using SQL. Document your findings.
 Answer:
 
+SELECT * FROM playlist
+WHERE playlist_name IS NULL
+   OR playlist_name = '';
+
+SELECT * FROM playlist
+WHERE created_at IS NULL;
+
 5.
 Explain with a practical example how the ACID properties (Atomicity, Consistency, Isolation, Durability) would apply when a user books a movie ticket on BookMyShow and the payment is processed. Give one line for each property.
 Answer:
+
+Atomicity: Payment and ticket booking both happen, or both fail.
+Consistency: Booking and seat data stay correct.
+Isolation: Two users cannot book the same seat.
+Durability: Once booked, the ticket stays booked.
+
 
