@@ -2,18 +2,71 @@
 Write an SQL query to validate that every new user registration in a 'users' table has a unique email and a non-empty password field. Test your query by inserting both valid and invalid records, then verify the results.
 Answer:
 
+SELECT email, COUNT(*) FROM users
+GROUP BY email
+HAVING COUNT(*) > 1;
+
+SELECT * FROM users
+WHERE password IS NULL OR password = '';
+
+INSERT INTO users (email, password)
+VALUES ('test@gmail.com', '123456');
+
+INSERT INTO users (email, password)
+VALUES ('test@gmail.com', '');
+
 2.
 Simulate a 'Forgot Password' scenario for an e-commerce app by creating test data in a 'password_resets' table. Insert a record with an expired timestamp and another with a valid timestamp, then write SQL to fetch only the active reset requests.
 Answer:
+
+INSERT INTO password_resets (user_id, token, expires_at)
+VALUES (1, 'abc123', '2026-08-01 10:00:00');
+
+INSERT INTO password_resets (user_id, token, expires_at)
+VALUES (2, 'xyz789', '2026-09-10 10:00:00');
+
+SELECT * FROM password_resets
+WHERE expires_at > CURRENT_TIMESTAMP;
 
 3.
 Perform negative SQL testing on a 'product_orders' table by attempting to insert an order with a non-existent product_id and a negative quantity. Observe and document the database's response or error messages.<br><br><em><strong>Hint:</strong> Check if foreign key and check constraints are enforced in your table schema.</em>
 Answer:
 
+INSERT INTO product_orders (product_id, quantity)
+VALUES (9999, -5);
+
 4.
 Write a cleanup SQL script that deletes all test user accounts created for testing in the 'users' table, but keeps real accounts intact. Assume test accounts have emails ending with '@test.com'.
 Answer:
 
+DELETE FROM users
+WHERE email LIKE '%@test.com';
+
 5.
 Design a test data creation strategy for validating user order history: generate at least 5 users, each with 2-3 orders in the 'orders' table, and at least one user with no orders. Explain how this covers edge cases for order history features.
 Answer:
+
+INSERT INTO users (user_id, username, email)
+VALUES
+(1, 'User1', 'user1@test.com'),
+(2, 'User2', 'user2@test.com'),
+(3, 'User3', 'user3@test.com'),
+(4, 'User4', 'user4@test.com'),
+(5, 'User5', 'user5@test.com'),
+(6, 'User6', 'user6@test.com');
+
+
+INSERT INTO orders (order_id, user_id, item_name)
+VALUES
+(101, 1, 'Pizza'),
+(102, 1, 'Burger'),
+(103, 2, 'Pizza'),
+(104, 2, 'Burger'),
+(105, 2, 'Biryani'),
+(106, 3, 'Pizza'),
+(107, 3, 'Pasta'),
+(108, 4, 'Burger'),
+(109, 4, 'Pizza'),
+(110, 4, 'Pasta'),
+(111, 5, 'Biryani'),
+(112, 5, 'Pizza');
