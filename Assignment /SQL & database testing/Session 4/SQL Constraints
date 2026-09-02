@@ -44,15 +44,13 @@ ERROR 1048 (23000): Column 'email' cannot be null
 Add a CHECK constraint to the Playlist table so that song_name must be at least 3 characters long, then attempt to insert a song with a 2-character name and record the error message.
 Answer:
 
-1. Add CHECK constraint
+1. Add CHECK constraint:
 ALTER TABLE Playlist
-ADD CONSTRAINT chk_song_name
-CHECK (CHAR_LENGTH(song_name) >= 3);
+ADD CHECK (LENGTH(song_name) >= 3);
 
-2.insert a 2-character song name
-INSERT INTO Playlist (song_id, song_name, artist)
-VALUES (1, 'AB', 'Arijit Singh');
+2. Insert 2-character song:
+INSERT INTO Playlist (song_name)
+VALUES ('AB');
 
-Error:
-ERROR 3819 (HY000): Check constraint 'chk_song_name' is violated.
-
+3. Error:
+ERROR 3819: Check constraint is violated.
