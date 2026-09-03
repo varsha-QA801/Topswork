@@ -6,21 +6,344 @@ unsuccessful? Walk through the next three steps in the Bug Life Cycle for this d
 each state and identifying who is responsible at each step.
 
 Answer:
-1.Reopened – QA Tester:
-Tester finds the bug is not fixed.
-Changes status from Fixed → Reopened.
-
-2.Assigned/Open – Developer:
-Bug goes back to the developer.
-Developer checks and fixes the problem again.
-
-3.Fixed – Developer:
-Developer fixes the bug.
-Changes status to Fixed.
-Then QA tests it again.
+Reopened → QA opens the defect again.
+Assigned → Developer gets the defect and fixes it.
+Fixed → Developer marks it fixed and sends it to QA for testing again.
 
 Question: Assign Severity (S1–S4) and Priority (P1–P3) to both defects and justify each
 assignment in one sentence. Then explain why a defect can have high Severity but low Priority —
 use defect (a) or (b) to illustrate your answer.
 
 Answer:
+Defect                                Severity         Priority       Reason                                                        
+--------------------------------------------------------------------------------------------------------------------------------- 
+(a) Place Order button not working    S1 – Critical    P1 – High      Users cannot place orders, so it must be fixed immediately.   
+(b) Logo 4 pixels misaligned          S4 – Low         P3 – Low       It is only a small design issue and does not affect ordering. 
+
+Question: Justify why this scenario is a strong candidate for Selenium IDE automation using at
+least two criteria from the 'when to automate' framework. Then state two limitations of Selenium
+IDE that your lead must consider before committing to it as the automation tool.
+
+Answer:
+Repeated testing: We test search and filter again and again every sprint.
+Saves time: Manual testing takes 4 hours, so automation can save time.
+Regression testing: We need to check the same features after every update.
+
+Limitations of Selenium IDE:
+It is not good for complex testing.
+If the app changes, we may need to change the test scripts.
+
+Question: Which locator should you use and why? Define what makes a locator 'fragile' in
+Selenium IDE automation, and describe one specific consequence of using a fragile locator in a
+regression suite that runs every sprint.
+
+Answer:
+Use the ID locator ("btn-confirm-order") because it is stable.
+
+A fragile locator can easily break when the page changes.
+
+The XPath is fragile because the page structure may change.
+
+Consequence: The test can fail even when the application is working correctly.
+
+Question: Describe the JOIN structure needed to validate whether the order history page is
+displaying accurate data. Explain why a LEFT JOIN may be more appropriate than an INNER JOIN
+for this validation task, and what discrepancy it would help you detect.
+
+Answer:
+We need to join 3 tables:
+orders with users using user_id
+orders with restaurants using restaurant_id
+
+example:
+SELECT u.name, r.name, o.amount
+FROM orders o
+LEFT JOIN users u ON o.user_id = u.user_id
+LEFT JOIN restaurants r ON o.restaurant_id = r.restaurant_id;
+
+LEFT JOIN is better because it shows all orders, even if user or restaurant data is missing.
+
+It helps detect: Missing or incorrect customer or restaurant details shown on the order history page.
+
+Question: Identify which ACID property has been violated in this scenario and explain why.
+Describe two SQL queries you would write to confirm whether the violation occurred, and explain
+what this finding reveals about the importance of ACID compliance in QA testing.
+
+Answer:
+ACID Property : Atomicity
+
+Atomicity means either the complete transaction happens or nothing happens.
+Here, the wallet money was deducted, but the order was not created. So, only half of the transaction happened.
+
+SQL Queries:
+1. Check wallet balance:
+SELECT * FROM wallet WHERE user_id = 101;
+
+2. Check the order:
+SELECT * FROM orders WHERE user_id = 101;
+
+If money is deducted but no order is found, it means the transaction failed partially.
+
+Importance in QA:
+ACID keeps data correct and safe. It helps testers find problems like money deducted but no order created.
+
+
+
+
+                                                                     Section B — Practical Tasks
+                                                                     ----------------------------
+
+Task 1: Defect Report — Checkout Button Bug
+___________________________________________
+Write a complete, formal defect report for a food delivery app where the checkout button
+becomes unresponsive when the cart contains more than 10 items.
+Include all standard defect report fields: Title, Steps to Reproduce (numbered), Expected
+Result, Actual Result, and Environment (browser, OS, app build version).
+Assign a Severity level (S1–S4) and a Priority level (P1–P3), with a one-line justification for each
+assignment.
+Write a retest test case (minimum 5 numbered steps with an expected result) that a
+developer can use to verify the fix once deployed.
+Set the correct Bug Life Cycle state for this defect given that it has just been discovered and
+not yet assigned to any developer.
+
+Answer:
+Defect Report
+Title: Checkout button not working with more than 10 items.
+
+Steps:
+Open the app.
+Login.
+Add more than 10 items.
+Open the cart.
+Click Checkout.
+
+Expected: Checkout page should open.
+Actual: Checkout button does not work.
+Environment: Chrome, Windows 11, Build v1.0.0
+
+Severity: S1 – Critical
+Users cannot place an order.
+
+Priority: P1 – High
+It should be fixed quickly.
+
+Retest:
+Open app.
+Login.
+Add more than 10 items.
+Open cart.
+Click Checkout.
+
+Expected: Checkout page should open successfully.
+
+Task 2: Selenium IDE Test Suite — Login and Add-to-Cart Flow
+____________________________________________________________
+Build a Selenium IDE test suite for the food delivery app covering the login and add-to-cart
+workflow, exported as a .side file or documented as a structured test plan.
+Create Test Case 1: open the app URL, log in with valid credentials (email + password), search
+for a restaurant by name, and add one menu item to the cart — using id or name locators
+wherever available and documenting any XPath used.
+Add at least one waitForElementVisible command after the search action to handle
+AJAX-loaded results before interacting with them.
+Create Test Case 2 for a negative login scenario: enter invalid credentials, click Login, and use
+a verifyText command to confirm the expected error message appears.
+Add both test cases to a single Test Suite named 'FoodDelivery_Regression_Suite' and
+document the order in which they should execute.
+
+Answer:
+Selenium IDE Test Suite
+Suite Name: FoodDelivery_Regression_Suite
+
+Test Case 1: Login + Add to Cart
+Open → Food delivery app URL.
+Type → Email in id=email.
+Type → Password in id=password.
+Click → Login using id=login.
+Type → Restaurant name in id=search.
+Click → Search button.
+Wait → waitForElementVisible → id=restaurant-result.
+Click → Restaurant.
+Click → Menu item.
+Click → id=add-to-cart.
+
+Expected: Login is successful and the item is added to the cart.
+
+XPath (if needed):
+//button[contains(text(),'Add to Cart')]
+
+Test Case 2: Invalid Login
+Open → Food delivery app.
+Type → Wrong email.
+Type → Wrong password.
+Click → Login.
+verifyText → Check error message: "Invalid email or password"
+
+Expected: Error message should be displayed.
+
+Execution Order
+1. Test Case 1 – Valid Login + Add to Cart
+2. Test Case 2 – Invalid Login
+
+Task 3: SQL Backend Validation — Orders and Users
+__________________________________________________
+Write SQL queries to validate that the food delivery app's database correctly reflects UI
+operations performed during the order placement flow.
+Write a SELECT query with a WHERE clause to confirm that a newly placed order exists in the
+orders table with the correct user_id, total_amount, and status = 'placed'.
+Write an INNER JOIN query across the users, orders, and restaurants tables to verify that every
+order record has a corresponding valid user and restaurant entry.Write an INSERT statement to add a test user record into the users table, followed by a SELECT
+query that confirms the insertion by retrieving the record using the inserted email address.
+Write a query to identify any orders where total_amount IS NULL or total_amount = 0, flagging
+potential data integrity defects introduced by the UI.
+
+Answer:
+1. Check New Order
+SELECT * FROM orders
+WHERE user_id = 101
+AND total_amount = 500
+AND status = 'placed';
+
+2. Check User and Restaurant
+SELECT * FROM users u
+INNER JOIN orders o ON u.user_id = o.user_id
+INNER JOIN restaurants r ON o.restaurant_id = r.restaurant_id;
+
+3. Add Test User
+INSERT INTO users (name, email, phone)
+VALUES ('Test User', 'test@gmail.com', '9876543210');
+
+Then check:
+SELECT * FROM users
+WHERE email = 'test@gmail.com';
+
+4. Find Wrong Order Amounts
+SELECT * FROM orders
+WHERE total_amount IS NULL
+OR total_amount = 0;
+
+Task 4: End-to-End QA Workflow — Selenium + SQL Integration
+____________________________________________________________
+Design a combined QA workflow that uses Selenium IDE to execute the food delivery app's full
+checkout flow and SQL queries to validate the resulting database state.
+List the complete sequence of Selenium IDE commands for the workflow: open app › login ›
+search restaurant › add item › apply coupon code › place order › verify the order confirmation
+message using assertText.
+Write the SQL SELECT query to confirm the order was inserted in the orders table with the
+correct coupon_code, discount_applied, and final_amount values after the Selenium test
+completes.
+Write a LEFT JOIN query between the orders and payments tables to identify any orders placed
+by the test user that have no matching payment record — indicating a transaction failure
+during the automated test run.
+Document one defect (using the format from Task 1) that this combined workflow could
+uncover, assigning the correct Severity and Priority based on its business impact.
+
+Answer:
+
+1. Selenium IDE Commands
+open        → Food delivery app
+click       → Login
+type        → Enter username/email
+type        → Enter password
+click       → Login button
+click       → Search box
+type        → Restaurant name
+click       → Restaurant
+click       → Food item
+click       → Add to Cart
+click       → Apply Coupon
+type        → Coupon code
+click       → Apply
+click       → Place Order
+assertText  → Order confirmation message
+
+Purpose: It completes the order process and checks the order confirmation message.
+
+2. Check Order
+SELECT order_id, coupon_code, discount_applied, final_amount
+FROM orders
+WHERE user_id = 101;
+Purpose: It checks the coupon, discount, and final amount of the order.
+
+3. Check Payment
+SELECT o.order_id, p.payment_id
+FROM orders o
+LEFT JOIN payments p
+ON o.order_id = p.order_id
+WHERE o.user_id = 101
+AND p.payment_id IS NULL;
+Purpose: It finds orders where payment is missing.
+
+4. Defect Report
+Defect: Order is created but payment is missing.
+
+Steps:
+Login.
+Search restaurant.
+Add food item.
+Apply coupon.
+Place order.
+Check database.
+
+Expected: Order and payment should be saved.
+Actual: Order is saved but payment is missing.
+
+Severity: High
+Priority: High
+
+Reason: It can cause a problem with the customer's order and payment.
+
+                                                   Section C — Mini Capstone Project
+                                                   ---------------------------------
+Mini Project: Food Delivery App QA Suite
+Objective:
+Build a complete QA documentation and validation package for a food delivery app's order
+management and payment system, combining defect management, Selenium IDE automation
+planning, and SQL backend validation into a single cohesive test deliverable that demonstrates
+the full QA workflow from requirements through defect closure.
+Your project must:
+Write a mini test plan (one page) covering scope, test objectives, tools to be used (JIRA,
+Selenium IDE, MySQL), and entry and exit criteria for the order placement and payment
+modules.
+Log at least three defects (using the formal defect report format) discovered — or realistically
+simulated — across the UI and database layers, assigning correct Severity, Priority, and Bug Life
+Cycle state to each.
+Create a Selenium IDE test plan listing at least five test cases for the login, restaurant search,
+cart, checkout, and order confirmation flows — each test case must include the locator
+strategy used and the expected result.Write five SQL validation queries covering: new user registration confirmation, order placement
+verification (with JOIN across users and orders), coupon discount validation, payment record
+confirmation, and order history retrieval for a specific user.
+Create a Requirement Traceability Matrix (RTM) linking at least three functional requirements
+to their corresponding Selenium IDE test case(s) and any related defect IDs from your defect
+log.
+
+Answer:
+
+
+                                               Section D — AI-Augmented Learning
+                                               ---------------------------------
+STEP 1 · BUILD WITH AI
+Use an AI tool of your choice (ChatGPT, Claude, GitHub Copilot, etc.) to help you write a SQL script
+for a food delivery database that:
+Creates a food_delivery database with at least three tables — users, orders, and payments —
+including appropriate PRIMARY KEY, FOREIGN KEY, NOT NULL, and UNIQUE constraints on each
+table.
+Inserts at least five test records into each table, including at least one deliberate edge-case
+record (e.g. an order with no matching payment entry, or a user with a NULL phone number
+where the column allows it).
+Writes three validation queries using JOIN and WHERE conditions that simulate the backend
+data checks a QA engineer would run after order placement — for example, verifying that
+every completed order has a payment record with a matching amount.
+Runs the complete script in MySQL and captures a screenshot of the output of each validation
+query as evidence of successful execution.
+STEP 2 · TEST & DEBUG (WITHOUT AI)
+Then, working without AI, review the SQL script and find at least one bug, limitation, or
+improvement in the AI's solution. Fix it yourself. Common AI mistakes in SQL include: missing
+WHERE clauses on UPDATE or DELETE statements, omitting NOT NULL on critical columns,
+generating incorrect JOIN conditions that return unintended rows, or inserting test data that
+does not actually trigger the edge case described.
+
+Answer:
+
+
+
+
