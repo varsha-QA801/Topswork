@@ -1,0 +1,19 @@
+1.
+Open Selenium IDE and record a test that searches for 'Bluetooth Headphones' on Flipkart, then waits for the product results to appear before clicking on the first product.
+Answer:
+
+2.
+Add an explicit wait in your Selenium IDE test to ensure the 'Add to Cart' button is visible before clicking it on a product page, simulating a real user action on a shopping site like Myntra.<br><br><em><strong>Hint:</strong> Use the 'wait for element visible' command in Selenium IDE.</em>
+Answer:
+
+3.
+Simulate an AJAX wait scenario by recording a test in Selenium IDE that enters a location in the Zomato search bar and waits for the dropdown suggestions to appear before selecting one.<br><br><em><strong>Hint:</strong> Use a wait command that targets the suggestions dropdown.</em>
+Answer:
+
+4.
+You have a Selenium IDE test that sometimes fails because the Instagram login button appears after a delay. Identify where to add a wait command and fix the test so it passes reliably.
+Answer:
+
+5.
+Explain in your own words the difference between implicit and explicit waits in Selenium, and give a real-world example for each from any app you use daily.
+Answer:
