@@ -1,0 +1,15 @@
+1.
+Open Selenium IDE and record a test that searches for a product on Flipkart, then generate and save the summary test report from the IDE after execution.
+Answer:
+
+2.
+Manually capture a screenshot of a failed test step while automating a Zomato restaurant search scenario using Selenium IDE, and save the screenshot with a clear filename indicating the failed step.
+Answer:
+
+3.
+Use Selenium IDE's built-in command to automatically take a screenshot after adding an item to the cart in a Myntra shopping flow, then verify that the screenshot is saved in the correct location.
+Answer:
+
+4.
+Given a test case that fails when searching for a movie on BookMyShow using Selenium IDE, use the IDE's debugging tools to identify the step causing the failure and write a short explanation of how you fixed it.<br><br><em><strong>Hint:</strong> Use breakpoints or step-by-step execution to isolate the problem.</em>
+Answer:
