@@ -1,0 +1,19 @@
+1.
+Open any website with a JavaScript alert (for example, create a simple HTML file with a button that triggers alert('Welcome to Testing!')), then use Selenium IDE to record a test that clicks the button and automatically accepts the alert.
+Answer:
+
+2.
+Find a website or create a page that uses an iFrame (for example, embed a YouTube video or Google Maps), then use Chrome DevTools to identify the iFrame element and note its name or ID.<br><br><em><strong>Hint:</strong> Right-click the embedded content and select 'Inspect' to locate the iFrame in the Elements panel.</em>
+Answer:
+
+3.
+Using Selenium IDE, create a test that switches to an iFrame on a page (such as a YouTube video embed) and verifies the presence of a specific element inside the iFrame (for example, the Play button).
+Answer:
+
+4.
+Simulate a scenario where a pop-up window (not an alert) opens after clicking a button (for example, a 'Share on WhatsApp' button that opens a new window). Write Selenium IDE steps to switch to the new window and check the page title.<br><br><em><strong>Hint:</strong> Use the 'select window' command in Selenium IDE to switch between windows.</em>
+Answer:
+
+5.
+Create a Selenium IDE test that navigates through a website with multiple frames (such as a demo page with a navigation menu in one frame and content in another). Switch between frames and verify that clicking a link in the navigation frame updates the content frame as expected.
+Answer:
