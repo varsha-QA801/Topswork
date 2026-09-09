@@ -1,0 +1,19 @@
+1.
+Use Selenium IDE to record a test that hovers over the 'Categories' menu on the Flipkart homepage and verifies that the dropdown appears.
+Answer:
+
+2.
+Install the 'UI.Vision RPA' Chrome extension and create a macro to perform a drag-and-drop operation on https://jqueryui.com/droppable/ by dragging the draggable box into the drop area.<br><br><em><strong>Hint:</strong> Use the extension's visual UI to select and move elements.</em>
+Answer:
+
+3.
+In Selenium IDE, automate a scenario where you use keyboard shortcuts to search for a product on Myntra: focus the search bar, type 'shoes', and press Enter to trigger the search.
+Answer:
+
+4.
+List 3 limitations you faced while trying to automate hover or drag-and-drop actions using only Selenium IDE or Chrome add-ons, and briefly explain how these limitations might affect testing real-world web apps.
+Answer:
+
+5.
+Use Selenium IDE to automate navigating the Zomato website's menu: hover over the 'Order Food Online' section, click on a cuisine (e.g., 'Pizza'), and verify that the results page loads.
+Answer:
