@@ -1,0 +1,19 @@
+1.
+List 3 repetitive actions you perform while using any app like Instagram, Zomato, or Flipkart that could be automated with a script or tool. For each, briefly explain why automation would help.
+Answer:
+
+2.
+Open Selenium IDE (install if needed), record a test that automates logging in to any demo website (e.g., https://opensource-demo.orangehrmlive.com/), and play it back to verify the steps are automated.<br><br><em><strong>Hint:</strong> Use the 'Record' button, perform login steps, then 'Stop Recording' and use 'Play current test case'.</em>
+Answer:
+
+3.
+Download and launch Katalon Studio, then explore its UI to find where you can create a new test case, add test steps, and run tests. Take screenshots of these three areas and submit them.
+Answer:
+
+4.
+Create a comparison table with 4 columns (Tool Name, Type of Testing, Scripting Required, Example Use Case) for Selenium, Cypress, Katalon Studio, and Postman. Fill in the details based on your own research.
+Answer:
+
+5.
+Pick one real-world scenario from your daily app usage (such as searching for a product on Flipkart or booking a movie on BookMyShow). Write a short paragraph describing how you would automate this scenario using any automation tool covered in class.
+Answer:
