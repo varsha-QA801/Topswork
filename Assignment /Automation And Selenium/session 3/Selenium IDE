@@ -1,0 +1,19 @@
+1.
+Install the Selenium IDE extension in your Chrome or Firefox browser and use it to record a simple test that opens the Flipkart homepage and verifies that the word 'Flipkart' appears on the page.
+Answer:
+
+2.
+Using Selenium IDE, create a test that searches for 'Bluetooth headphones' on the Amazon India website by typing into the search box and clicking the search button. Verify that the results page contains the text 'headphones'.
+Answer:
+
+3.
+Record a login test for a demo web app (such as https://practicetestautomation.com/practice-test-login/) using Selenium IDE. Use the 'type' command to enter username and password, click the login button, and verify that the success message appears.
+Answer:
+
+4.
+Parameterize your Selenium IDE test by creating a variable for the search term. Use this variable to run the same search test on Myntra for both 'shoes' and 't-shirts', verifying that the results update accordingly.<br><br><em><strong>Hint:</strong> Use the 'store' command to set a variable and reference it in your 'type' step.</em>
+Answer:
+
+5.
+Create a test suite in Selenium IDE containing two tests: one that verifies the Zomato homepage loads and another that tests the search functionality for 'pizza'. Export the test suite script (choose any export option) and briefly describe in a comment how exporting could help a QA team.
+Answer:
