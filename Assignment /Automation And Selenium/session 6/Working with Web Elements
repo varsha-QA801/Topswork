@@ -1,0 +1,19 @@
+1.
+Use Selenium WebDriver or Katalon Recorder to automate selecting your favorite IPL team from a dropdown menu on a sample sports fan signup form.
+Answer:
+
+2.
+Write an automation script that checks and unchecks multiple cuisine options (e.g., Pizza, Burger, Biryani) in a food delivery app-style form using Selenium or Katalon Recorder.
+Answer:
+
+3.
+Automate the process of selecting a payment method (UPI, Card, Wallet) using radio buttons on a mock checkout page and verify the correct option is selected.
+Answer:
+
+4.
+Create a Selenium or Katalon Recorder script to pick a specific date (e.g., your birthday) from a date picker in a movie ticket booking form.
+Answer:
+
+5.
+Automate entering a city name in a search box with auto-suggestions (like Zomato), select the second suggestion, and verify the correct value is entered.<br><br><em><strong>Hint:</strong> Use Selenium's sendKeys() to type and then select from the suggestion list using arrow keys or by locating the suggestion element.</em>
+Answer:
