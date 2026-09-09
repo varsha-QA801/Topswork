@@ -1,0 +1,19 @@
+1.
+Open Flipkart.com in Chrome, use the Inspect tool and SelectorsHub extension to identify the XPath for the search bar input element. Write down the exact XPath you found.
+Answer:
+
+2.
+On Zomato.com, use the contains() function in XPath to identify the 'Order Food Online' link on the homepage. Write the XPath expression you used and explain why contains() is helpful here.<br><br><em><strong>Hint:</strong> The link text may change slightly based on offers or language, so contains() can make your XPath more flexible.</em>
+Answer:
+
+3.
+Visit Instagram.com and use the XPath helper browser extension to find the XPath for the 'Forgot password?' link using the text() function. Write the XPath and explain what text() does in your own words.
+Answer:
+
+4.
+Pick any product page on Myntra.com, use the browser's Inspect tool to identify two sibling elements (for example, the product name and its price). Write the XPath for the product name, then write an XPath using following-sibling to select the price element.<br><br><em><strong>Hint:</strong> Use the axes concept: //tagname[text()='Product Name']/following-sibling::tagname</em>
+Answer:
+
+5.
+Open BookMyShow.com and use SelectorsHub to identify the XPath for the city selection dropdown. Then, use that XPath in your IDE's Selenium test (no code needed—just show where you'd paste it in the test step).<br><br><em><strong>Hint:</strong> You can copy-paste the XPath into the IDE's locator field for element selection.</em>
+Answer:
