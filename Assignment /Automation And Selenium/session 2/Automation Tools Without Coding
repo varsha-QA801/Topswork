@@ -1,0 +1,19 @@
+1.
+Install the Selenium IDE extension in your Chrome or Firefox browser and confirm it appears in your browser toolbar.
+Answer:
+
+2.
+Use Selenium IDE to record a test case that opens the Flipkart homepage, searches for 'headphones', and clicks on the first product link.
+Answer:
+
+3.
+With Selenium IDE, record a test that logs into Instagram's web login page using any dummy credentials and verifies that an error message appears.<br><br><em><strong>Hint:</strong> Look for a 'verify text' or 'assert' command to check for the error.</em>
+Answer:
+
+4.
+Install Katalon Recorder and record a test that opens Zomato, enters 'pizza' in the search bar, and captures a screenshot after the results load.<br><br><em><strong>Constraint:</strong> Use the screenshot command provided by the tool.</em>
+Answer:
+
+5.
+List 3 types of website tasks that non-programmers can automate using Selenium IDE or Katalon Recorder, and for each, briefly explain one limitation they might face with no-code automation.
+Answer:
