@@ -1,0 +1,19 @@
+1.
+Use Selenium IDE to automate the login process for the Flipkart website, ensuring the test script waits for the home page to load after login.<br><br><em><strong>Hint:</strong> Use the 'wait for element' command to confirm the user dashboard or profile icon is visible after logging in.</em>
+Answer:
+
+2.
+Record a Selenium IDE test that adds two products to the cart on Myntra, then verifies that both items appear in the cart summary.
+Answer:
+
+3.
+Create a Selenium IDE script to log out of your Zomato account after adding an item to the cart, and validate that the login page is displayed again.
+Answer:
+
+4.
+Export your Selenium IDE test suite as a test plan document, including steps for login, adding items, cart validation, and logout, and briefly describe the expected result for each step.
+Answer:
+
+5.
+Build a full regression test suite in Selenium IDE for the Swiggy website covering login, searching for a restaurant, adding a dish to the cart, and logging out. Ensure your suite includes at least one validation step for content (e.g., dish name or price).
+Answer:
