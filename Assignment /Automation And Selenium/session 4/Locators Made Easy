@@ -1,0 +1,19 @@
+1.
+Open Flipkart.com in Chrome, right-click on the search box, and use Inspect Element to find and write down its id, name, and CSS selector.
+Answer:
+
+2.
+On the Zomato homepage, use Chrome DevTools to extract the XPath for the 'Log in' link and explain whether this locator is likely to be stable or fragile.<br><br><em><strong>Hint:</strong> Consider if the XPath depends on position or text that might change.</em>
+Answer:
+
+3.
+Choose any visible button on the BookMyShow homepage and use Chrome DevTools to extract both its CSS selector and XPath. Paste both locators and briefly describe which one you think is more reliable for automation.
+Answer:
+
+4.
+Using Selenium IDE, record a simple test on Myntra.com that clicks the 'Men' menu link. After recording, view the test step and note which locator type Selenium IDE picked for the 'Men' link (id, name, linkText, CSS, or XPath).
+Answer:
+
+5.
+Pick a product listing element (like a product card) on Amazon.in and suggest a custom CSS selector that would remain stable even if the site's layout changes slightly. Justify your selector choice.<br><br><em><strong>Hint:</strong> Avoid selectors based only on index or class names that look auto-generated.</em>
+Answer:
