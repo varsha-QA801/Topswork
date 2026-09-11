@@ -2,6 +2,8 @@
 Install the Selenium IDE extension in your Chrome or Firefox browser and confirm it appears in your browser toolbar.
 Answer:
 
+I installed Selenium IDE in Firefox. After installation, the Selenium IDE icon appeared in the browser toolbar.
+
 2.
 Use Selenium IDE to record a test case that opens the Flipkart homepage, searches for 'headphones', and clicks on the first product link.
 Answer:
