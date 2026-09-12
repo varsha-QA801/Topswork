@@ -19,3 +19,12 @@ Answer:
 5.
 List 3 types of website tasks that non-programmers can automate using Selenium IDE or Katalon Recorder, and for each, briefly explain one limitation they might face with no-code automation.
 Answer:
+
+Login – Enter username and password.
+Problem: CAPTCHA is difficult to automate.
+
+Search – Search for a product.
+Problem: It may fail if the website changes.
+
+Form – Fill and submit a form.
+Problem: Complex forms are difficult to automate.
