@@ -1,0 +1,19 @@
+1.
+Write a Python script that asks the user for their name and favorite IPL team, then prints a welcome message using an f-string, such as 'Welcome, Priya! Your favorite team is Mumbai Indians.'
+Answer:
+
+2.
+Create a program that takes the price of a Zomato order as input (string), converts it to a float, adds a 10% delivery fee, and prints the final bill amount with two decimal places using f-string formatting.<br><br><em><strong>Hint:</strong> Use float() for conversion and format the output as Rs. 123.45.</em>
+Answer:
+
+3.
+Build a console script that asks the user for their Flipkart wishlist count (input as a string), converts it to an integer, and prints the count in a YouTube-style format (e.g., '1.2K' for 1200, '950' for 950).<br><br><em><strong>Hint:</strong> Use int() and f-strings; handle numbers above 1000 with one decimal place and add 'K'.</em>
+Answer:
+
+4.
+Write a Python script that prints a WhatsApp-style multi-line message using escape characters (\n and \t) to format the output like a chat conversation.
+Answer:
+
+5.
+Refactor the following code to use f-string formatting instead of string concatenation: name = 'Aryan'; score = 97; print('Congrats ' + name + ', your score is ' + str(score) + '!')
+Answer:
