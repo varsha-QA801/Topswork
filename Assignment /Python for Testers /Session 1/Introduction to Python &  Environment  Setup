@@ -6,14 +6,61 @@ Answer:
 Create a new folder named InstaTestProject, open it in VS Code, and set up a Python virtual environment inside it using the venv module.
 Answer:
 
+1.Create a folder called InstaTestProject.
+2.Open this folder in VS Code.
+3.Open Terminal → New Terminal.
+
+4.Run:
+python -m venv venv
+
+5.Activate it:
+venv\Scripts\activate
+6.If (venv) appears in the terminal, it is successfully created.
+
+Result: Virtual environment is created inside InstaTestProject.
+
 3.
 Use pip inside your InstaTestProject virtual environment to install the requests package, then run 'pip list' and note the installed packages.
 Answer:
+
+1.Open InstaTestProject in VS Code.
+2.Open the Terminal.
+3.Activate the virtual environment:
+  venv\Scripts\activate
+4.Install requests:
+  pip install requests
+5.Check the installed packages:
+  pip list
+6.You will see requests in the list.
+
+Result: The requests package is installed successfully.
 
 4.
 Write and run a Python script named hello_automation.py that prints 'Hello, Automation Tester!' and the current Python version being used.<br><br><em><strong>Hint:</strong> Use the sys.version property to display the Python version.</em>
 Answer:
 
+1.Open VS Code.
+2.Create a file named hello_automation.py.
+3.code:
+  import sys
+
+  print("Hello, Automation Tester!")
+  print(sys.version)
+4.Save the file.
+5.Run:
+  python hello_automation.py
+Output:
+  Hello, Automation Tester!
+  3.x.x
+
+Result: The program prints the message and the current Python version.
+
 5.
 Explain in 3-4 lines how using a virtual environment (venv) helps when working on multiple automation projects, especially if you need different package versions for each.
 Answer:
+
+A venv keeps each project separate.
+Each project can have different package versions.
+It stops packages from causing problems with each other.
+It makes projects easy to manage.
+
