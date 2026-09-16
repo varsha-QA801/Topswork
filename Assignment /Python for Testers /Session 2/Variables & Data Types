@@ -2,14 +2,65 @@
 Declare variables in Python to store your name, your age, your current city, your favorite food, and whether you have a Spotify subscription (True/False). Print the value and data type of each variable using the type() function.
 Answer:
 
+name = "Varsha"
+age = 20
+city = "Ahmedabad"
+food = "Pizza"
+spotify = True
+
+print(name, type(name))
+print(age, type(age))
+print(city, type(city))
+print(food, type(food))
+print(spotify, type(spotify))
+
+name → String
+age → Integer
+city → String
+food → String
+spotify → Boolean (True / False)
+
 2.
 Simulate a Zomato order summary: create variables for restaurant_name (string), item_count (integer), total_price (float), is_veg (boolean), and delivery_time_minutes (integer). Print a message like 'Ordered 3 items from Pizza Palace. Total: ₹450.5. Veg: True. Delivery in 30 min.'
 Answer:
+
+restaurant_name = "Pizza Palace"
+item_count = 3
+total_price = 450.5
+is_veg = True
+delivery_time_minutes = 30
+
+print("Ordered", item_count, "items from", restaurant_name)
+print("Total:", total_price)
+print("Veg:", is_veg)
+print("Delivery in", delivery_time_minutes, "min.")
+
+Output:
+Ordered 3 items from Pizza Palace
+Total: 450.5
+Veg: True
+Delivery in 30 min.
 
 3.
 Write a Python script that takes the number of followers and posts as input for a YouTube channel, stores them in variables, and prints 'You have X followers and Y posts.' Make sure to convert the inputs to the correct data types.
 Answer:
 
+followers = int(input("Enter followers: "))
+posts = int(input("Enter posts: "))
+
+print("You have", followers, "followers and", posts, "posts.")
+
 4.
 Given the variables: product_price = '499', discount = 50 (in rupees), and is_flash_sale = 'True', convert product_price and is_flash_sale to the correct data types, then calculate and print the final price after discount.<br><br><em><strong>Hint:</strong> Use int() and bool() for type conversion.</em>
 Answer:
+
+product_price = '499'
+discount = 50
+is_flash_sale = 'True'
+
+product_price = int(product_price)
+is_flash_sale = bool(is_flash_sale)
+
+final_price = product_price - discount
+
+print("Final Price:", final_price)
