@@ -2,18 +2,60 @@
 Write a Python script that takes the number of likes and comments on an Instagram post as input, and prints whether the post is 'Trending' if likes are more than 1000 and comments are more than 100, otherwise prints 'Not Trending'.
 Answer:
 
+likes = int(input("Enter likes: "))
+comments = int(input("Enter comments: "))
+
+if likes > 1000 and comments > 100:
+    print("Trending")
+else:
+    print("Not Trending")
+
 2.
 Build a Flipkart-style discount calculator: input the original price and discount percentage, then use arithmetic operators to calculate and print the final price after discount.
 Answer:
+
+price = float(input("Enter original price: "))
+discount = float(input("Enter discount percentage: "))
+
+discount_amount = price * discount / 100
+final_price = price - discount_amount
+
+print(f"Final Price: Rs. {final_price:.2f}")
 
 3.
 Create a Python program that checks if a Zomato order is eligible for free delivery: if the total amount is greater than or equal to 299, print 'Free Delivery', else print 'Delivery Charges Apply'.
 Answer:
 
+amount = float(input("Enter order amount: "))
+
+if amount >= 299:
+    print("Free Delivery")
+else:
+    print("Delivery Charges Apply")
+
 4.
 Write a program that takes a user's Paytm wallet balance and the amount they want to pay. Use conditional statements to check if the payment can be processed (balance >= amount). Print 'Payment Successful' or 'Insufficient Balance' accordingly.<br><br><em><strong>Constraint:</strong> Do not use the input() function more than twice.</em>
 Answer:
 
+balance = float(input("Enter wallet balance: "))
+amount = float(input("Enter payment amount: "))
+
+if balance >= amount:
+    print("Payment Successful")
+else:
+    print("Insufficient Balance")
+
 5.
 Create a script that takes a cricket player's runs and strike rate as input and prints 'Excellent', 'Good', or 'Needs Improvement' based on these rules: if runs > 50 and strike rate > 120, print 'Excellent'; if runs > 30 and strike rate > 100, print 'Good'; else print 'Needs Improvement'.<br><br><em><strong>Hint:</strong> Use if-elif-else statements for the conditions.</em>
 Answer:
+
+runs = int(input("Enter runs: "))
+strike_rate = float(input("Enter strike rate: "))
+
+if runs > 50 and strike_rate > 120:
+    print("Excellent")
+elif runs > 30 and strike_rate > 100:
+    print("Good")
+else:
+    print("Needs Improvement")
+
