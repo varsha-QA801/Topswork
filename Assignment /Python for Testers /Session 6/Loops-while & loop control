@@ -2,14 +2,58 @@
 Write a Python script that uses a while loop to print all numbers from 1 to 10, each on a new line.
 Answer:
 
+i = 1
+
+while i <= 10:
+    print(i)
+    i += 1
+
 2.
 Simulate a Zomato-style order retry: Use a while loop to keep asking the user to enter 'yes' to confirm their food order, and stop only when the user types 'yes'.
 Answer:
+
+order = input("Do you want to confirm your food order? ")
+
+while order != "yes":
+    order = input("Please type 'yes' to confirm your order: ")
+
+print("Order confirmed!")
 
 3.
 Build a Flipkart-style cart total calculator: Given a list of item prices, use a while loop to sum the prices until the total exceeds 1000, then stop and print the subtotal.<br><br><em><strong>Hint:</strong> Use loop control statements to exit the loop once the subtotal goes above 1000.</em>
 Answer:
 
+prices = [250, 300, 400, 150, 200]
+
+total = 0
+i = 0
+
+while i < len(prices):
+    total += prices[i]
+
+    if total > 1000:
+        break
+
+    i += 1
+
+print("Subtotal:", total)
+
 4.
 Create a simple password attempt system like Paytm: Allow the user up to 3 tries to enter the correct password using a while loop. Print 'Access Denied' if all attempts fail, or 'Welcome' if the correct password is entered.
 Answer:
+
+password = "1234"
+attempts = 0
+
+while attempts < 3:
+    user_password = input("Enter password: ")
+
+    if user_password == password:
+        print("Welcome")
+        break
+
+    attempts += 1
+
+else:
+    print("Access Denied")
+
