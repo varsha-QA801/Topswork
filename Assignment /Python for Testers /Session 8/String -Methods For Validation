@@ -1,0 +1,19 @@
+1.
+Write a Python function is_valid_email(email) that checks if a given string is a valid email address using string methods (like find, count, startswith, endswith) and returns True or False.<br><br><em><strong>Hint:</strong> Check for exactly one '@', at least one '.', and that '@' is not at the start or end.</em>
+Answer:
+
+2.
+Create a function validate_username(username) that returns True only if the username is at least 6 characters, contains only letters and numbers, and does not start with a digit.
+Answer:
+
+3.
+Build a password strength checker function check_password_strength(password) that returns 'Weak', 'Medium', or 'Strong' based on these rules: Weak if less than 6 characters, Medium if at least 6 and contains letters and numbers, Strong if it also contains at least one special character (!@#$%^&*).
+Answer:
+
+4.
+Given a list of strings representing Instagram usernames, write a function filter_invalid_usernames(usernames) that returns a new list containing only the usernames that are valid (use your validate_username function from Task 2).
+Answer:
+
+5.
+Use ChatGPT or Copilot to generate a Python function that checks if a given string is a valid Indian phone number (should be 10 digits, start with 6-9, and contain only numbers). Test the generated function with three sample inputs and write down if it worked as expected.
+Answer:
