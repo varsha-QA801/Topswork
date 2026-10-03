@@ -1,0 +1,19 @@
+1.
+Create a Python file called math_helpers.py and define two functions: add_numbers(a, b) and multiply_numbers(a, b). Import these functions into another file called spotify_playlist.py and use them to calculate the total duration of two songs (in minutes) and the product of their play counts.
+Answer:
+
+2.
+Organize a package folder named insta_utils with an __init__.py file and two modules: filters.py (define a function apply_bw_filter(image_name)) and stories.py (define a function add_story(username, image_name)). Import both functions into a new script called main_insta.py and call them with sample values.
+Answer:
+
+3.
+Install the requests package using pip and write a script called fetch_trending_movies.py that fetches data from https://jsonplaceholder.typicode.com/posts and prints the titles of the first 3 posts.<br><br><em><strong>Hint:</strong> Use pip install requests in your terminal before running the script.</em>
+Answer:
+
+4.
+Refactor an existing script that has helper functions for formatting follower counts and post timestamps (e.g., format_follower_count, format_post_time) into a separate module called social_helpers.py, then import and use them in your main script for displaying formatted data like YouTube or Instagram.
+Answer:
+
+5.
+Use ChatGPT or GitHub Copilot to suggest a third-party Python package that can generate QR codes for payment links, then install the suggested package with pip and write a script called generate_qr.py that creates a QR code for a sample UPI payment link.<br><br><em><strong>Hint:</strong> Ask the AI tool for both the package name and a basic code example.</em>
+Answer:
