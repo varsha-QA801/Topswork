@@ -1,0 +1,19 @@
+1.
+Create a tuple named fav_brands containing the names of 5 clothing brands you see on Myntra, and print the second and last brand from the tuple.
+Answer:
+
+2.
+Write a Python function get_unique_cuisines(restaurants) that takes a list of restaurant cuisines (e.g., ['Italian', 'Chinese', 'Italian', 'Mexican', 'Chinese']) and returns a set of unique cuisines like Zomato shows in its filters.
+Answer:
+
+3.
+Given a tuple scores = (120, 85, 150, 200, 85, 120), write code to count how many times the score 120 appears in the tuple and print the result.<br><br><em><strong>Hint:</strong> Use the tuple's count() method.</em>
+Answer:
+
+4.
+Suppose you have two sets: watched_movies = {'RRR', 'Jawan', 'KGF', 'Pathaan'} and trending_movies = {'Jawan', 'Pathaan', 'Animal', 'Salaar'}. Write code to find and print the movies you have watched that are also trending, like BookMyShow's 'Trending Now' badge.
+Answer:
+
+5.
+Use ChatGPT to generate a Python code snippet that finds all unique hashtags from a list of Instagram post captions, then copy and run the code in your IDE. Paste the output and the exact prompt you used.<br><br><em><strong>Hint:</strong> Your prompt should mention extracting hashtags from a list of strings using sets.</em>
+Answer:
