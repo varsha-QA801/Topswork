@@ -1,0 +1,19 @@
+1.
+Write a Python script that reads a list of song names from a text file called songs.txt and prints each song name with its line number, like a Spotify playlist.
+Answer:
+
+2.
+Create a Python program that saves your 5 favorite food items and their ratings (out of 5) as a JSON file named my_food_ratings.json, then loads the file and prints each item with its rating.
+Answer:
+
+3.
+Given a string containing a mix of hashtags and usernames like an Instagram caption (e.g., 'Loving the vibes! #summer @friend1 #fun @friend2'), use Python's re module to extract all hashtags and all usernames separately and print them.<br><br><em><strong>Hint:</strong> Hashtags start with #, usernames start with @.</em>
+Answer:
+
+4.
+Modify the following code so that it only prints email addresses ending with '.in' from a list of emails using regex:<br><br>emails = ['user1@gmail.com', 'friend@yahoo.in', 'test123@outlook.in', 'hello@company.com']<br><br><em><strong>Constraint:</strong> Use the re module and avoid using list comprehensions for filtering.</em>
+Answer:
+
+5.
+Use ChatGPT or Copilot to generate a Python regex pattern that matches valid Indian phone numbers (starting with 7, 8, or 9 and exactly 10 digits). Test the pattern by checking three sample numbers and print whether each is valid.
+Answer:
