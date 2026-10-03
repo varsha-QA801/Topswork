@@ -1,0 +1,19 @@
+1.
+Create a Python class called Song representing a Spotify song with attributes title, artist, and duration. Instantiate two Song objects and print their details.
+Answer:
+
+2.
+Build a subclass called Podcast that inherits from the Song class, adds a new attribute host, and overrides the __str__ method to display all details including the host.
+Answer:
+
+3.
+Write a Playlist class that can store a list of Song and Podcast objects. Add a method add_item() to add songs or podcasts to the playlist, and a method show_playlist() to print all items with their details.
+Answer:
+
+4.
+Given the following code for a class UserProfile, extend it to create an InfluencerProfile subclass that adds a followers attribute and a method get_influencer_level() which returns 'Micro', 'Macro', or 'Mega' based on the number of followers.<br><br><em><strong>Hint:</strong> Micro: < 10,000, Macro: 10,000–1,000,000, Mega: > 1,000,000</em>
+Answer:
+
+5.
+Use ChatGPT to generate Python code for a base Notification class and two subclasses: EmailNotification and SMSNotification. Each subclass should have a send() method that prints a message indicating the type of notification sent. Paste the code you received and run it to demonstrate inheritance.
+Answer:
