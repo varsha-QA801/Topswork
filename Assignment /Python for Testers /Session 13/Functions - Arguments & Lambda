@@ -1,0 +1,19 @@
+1.
+Write a Python function called calculate_discounted_price that takes two arguments: price and discount_percent, and returns the final price after applying the discount.
+Answer:
+
+2.
+Create a function called format_follower_count that takes a follower count as an argument and returns the count formatted like Instagram (e.g., 1500 as '1.5K', 1200000 as '1.2M').<br><br><em><strong>Hint:</strong> Use conditional logic to determine which suffix to use based on the count.</em>
+Answer:
+
+3.
+Write a lambda function to filter out all songs longer than 4 minutes from a list of tuples representing Spotify songs (each tuple contains song name and duration in minutes).
+Answer:
+
+4.
+Define a function called apply_coupon that takes an order total and an optional coupon code argument (default is None). If the coupon code is 'SAVE10', apply a 10% discount; otherwise, return the original total.
+Answer:
+
+5.
+Refactor the following code to use a lambda function inside the map() method to add 100 reward points to each user's points in a list: users = [120, 340, 560, 80]. Print the new list of points.<br><br><em><strong>Constraint:</strong> Do not use a for loop.</em>
+Answer:
