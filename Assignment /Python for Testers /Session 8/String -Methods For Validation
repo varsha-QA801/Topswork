@@ -1,19 +1,73 @@
 1.
 Write a Python function is_valid_email(email) that checks if a given string is a valid email address using string methods (like find, count, startswith, endswith) and returns True or False.<br><br><em><strong>Hint:</strong> Check for exactly one '@', at least one '.', and that '@' is not at the start or end.</em>
 Answer:
+def is_valid_email(email):
+    if email.count("@") == 1 and email.find("@") > 0 and email.find("@") < len(email) - 1:
+        if "." in email:
+            return True
+    return False
+
+print(is_valid_email("abc@gmail.com"))
+print(is_valid_email("@gmail.com"))
 
 2.
 Create a function validate_username(username) that returns True only if the username is at least 6 characters, contains only letters and numbers, and does not start with a digit.
 Answer:
 
+def validate_username(username):
+    if len(username) >= 6 and username.isalnum() and not username[0].isdigit():
+        return True
+    return False
+
+print(validate_username("Priya123"))
+print(validate_username("123Priya"))
+print(validate_username("Priya@12"))
+
 3.
 Build a password strength checker function check_password_strength(password) that returns 'Weak', 'Medium', or 'Strong' based on these rules: Weak if less than 6 characters, Medium if at least 6 and contains letters and numbers, Strong if it also contains at least one special character (!@#$%^&*).
 Answer:
+
+def check_password_strength(password):
+
+    if len(password) < 6:
+        return "Weak"
+
+    if password.isalnum():
+        return "Medium"
+
+    return "Strong"
+
+print(check_password_strength("abc"))
+print(check_password_strength("abc123"))
+print(check_password_strength("abc123@"))
 
 4.
 Given a list of strings representing Instagram usernames, write a function filter_invalid_usernames(usernames) that returns a new list containing only the usernames that are valid (use your validate_username function from Task 2).
 Answer:
 
+def validate_username(username):
+    return len(username) >= 6 and username.isalnum() and not username[0].isdigit()
+
+def filter_invalid_usernames(usernames):
+    valid_usernames = []
+
+    for username in usernames:
+        if validate_username(username):
+            valid_usernames.append(username)
+
+    return valid_usernames
+
+usernames = ["Priya123", "123abc", "Rahul45", "abc@", "Amit123"]
+
+print(filter_invalid_usernames(usernames))
+
 5.
 Use ChatGPT or Copilot to generate a Python function that checks if a given string is a valid Indian phone number (should be 10 digits, start with 6-9, and contain only numbers). Test the generated function with three sample inputs and write down if it worked as expected.
 Answer:
+
+def is_valid_phone(number):
+    return len(number) == 10 and number.isdigit() and number[0] in "6789"
+
+print(is_valid_phone("9876543210"))
+print(is_valid_phone("5123456789"))
+print(is_valid_phone("98765abc10"))
