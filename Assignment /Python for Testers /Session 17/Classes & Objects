@@ -1,0 +1,15 @@
+1.
+Create a Python class called Playlist that represents a music playlist with properties: name and songs (a list). Write a method add_song(song_name) to add a song to the playlist and print the updated list.
+Answer:
+
+2.
+Build a Product class for a Flipkart-style shopping app with attributes: product_name, price, and rating. Add a display_details() method that prints all product details in a formatted way.
+Answer:
+
+3.
+Write a MovieTicket class that takes movie_name, seat_number, and price as properties. Add a method apply_discount(percent) that reduces the price by the given percent and prints the new price.<br><br><em><strong>Hint:</strong> Use self.price to update the price inside the method.</em>
+Answer:
+
+4.
+Given this code snippet: class User: def __init__(self, name): self.name = name def greet(self): print('Hi' + self.name) user1 = User('Amit') user1.greet() — Fix the code so that it prints 'Hi Amit' (with a space) instead of 'HiAmit'.
+Answer:
