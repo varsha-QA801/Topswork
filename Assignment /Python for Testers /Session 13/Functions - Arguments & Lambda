@@ -2,18 +2,59 @@
 Write a Python function called calculate_discounted_price that takes two arguments: price and discount_percent, and returns the final price after applying the discount.
 Answer:
 
+def calculate_discounted_price(price, discount_percent):
+    discount = price * discount_percent / 100
+    final_price = price - discount
+    return final_price
+
+print(calculate_discounted_price(999, 20))
+
 2.
 Create a function called format_follower_count that takes a follower count as an argument and returns the count formatted like Instagram (e.g., 1500 as '1.5K', 1200000 as '1.2M').<br><br><em><strong>Hint:</strong> Use conditional logic to determine which suffix to use based on the count.</em>
 Answer:
+
+def format_follower_count(count):
+    if count >= 1000000:
+        return str(round(count / 1000000, 1)) + "M"
+    elif count >= 1000:
+        return str(round(count / 1000, 1)) + "K"
+    else:
+        return str(count)
+
+print(format_follower_count(1500))
+print(format_follower_count(1200000))
 
 3.
 Write a lambda function to filter out all songs longer than 4 minutes from a list of tuples representing Spotify songs (each tuple contains song name and duration in minutes).
 Answer:
 
+songs = [
+    ("Song A", 3.5),
+    ("Song B", 4.5),
+    ("Song C", 3.2),
+    ("Song D", 5.0)
+]
+
+result = list(filter(lambda song: song[1] <= 4, songs))
+print(result)
+
 4.
 Define a function called apply_coupon that takes an order total and an optional coupon code argument (default is None). If the coupon code is 'SAVE10', apply a 10% discount; otherwise, return the original total.
 Answer:
 
+def apply_coupon(total, coupon=None):
+    if coupon == "SAVE10":
+        total = total - (total * 10 / 100)
+    
+    return total
+
+print(apply_coupon(1000, "SAVE10"))
+print(apply_coupon(1000))
+
 5.
 Refactor the following code to use a lambda function inside the map() method to add 100 reward points to each user's points in a list: users = [120, 340, 560, 80]. Print the new list of points.<br><br><em><strong>Constraint:</strong> Do not use a for loop.</em>
 Answer:
+
+users = [120, 340, 560, 80]
+new_points = list(map(lambda points: points + 100, users))
+print(new_points)
