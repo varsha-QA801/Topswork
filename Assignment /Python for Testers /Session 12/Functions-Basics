@@ -1,0 +1,19 @@
+1.
+Write a Python function called get_total_price that takes two arguments: price and quantity, and returns the total amount (price multiplied by quantity). Call this function with price=299 and quantity=3, and print the result.
+Answer:
+
+2.
+Create a function named format_follower_count that takes a number and returns a string formatted like Instagram (e.g., 1500 becomes '1.5K', 1200000 becomes '1.2M'). Test your function with 950, 1500, and 1200000.<br><br><em><strong>Hint:</strong> Use conditional statements to check the size and format accordingly.</em>
+Answer:
+
+3.
+Build a function called get_discounted_price that takes the original price and a discount percentage, and returns the final price after applying the discount. Use this to calculate the final price for an item costing 999 with a 20% discount.
+Answer:
+
+4.
+Given a list of movie ratings (e.g., [4.5, 3.8, 5.0, 4.2]), write a function called average_rating that returns the average rating rounded to 1 decimal place. Print the result for the list above.
+Answer:
+
+5.
+Refactor the following code by moving the repeated logic into a function named is_even, which returns True if a number is even and False otherwise. Then, use this function to print all even numbers from 1 to 20.<br><br><em><strong>Hint:</strong> Use the modulus operator (%) to check for even numbers.</em>
+Answer:
