@@ -2,18 +2,64 @@
 Write a Python function called get_total_price that takes two arguments: price and quantity, and returns the total amount (price multiplied by quantity). Call this function with price=299 and quantity=3, and print the result.
 Answer:
 
+def get_total_price(price, quantity):
+    return price * quantity
+
+
+result = get_total_price(299, 3)
+
+print(result)
+
 2.
 Create a function named format_follower_count that takes a number and returns a string formatted like Instagram (e.g., 1500 becomes '1.5K', 1200000 becomes '1.2M'). Test your function with 950, 1500, and 1200000.<br><br><em><strong>Hint:</strong> Use conditional statements to check the size and format accordingly.</em>
 Answer:
+
+def format_follower_count(number):
+    if number >= 1000000:
+        return str(number / 1000000) + "M"
+    elif number >= 1000:
+        return str(number / 1000) + "K"
+    else:
+        return str(number)
+
+print(format_follower_count(950))
+print(format_follower_count(1500))
+print(format_follower_count(1200000))
 
 3.
 Build a function called get_discounted_price that takes the original price and a discount percentage, and returns the final price after applying the discount. Use this to calculate the final price for an item costing 999 with a 20% discount.
 Answer:
 
+def get_discounted_price(price, discount):
+    discount_amount = price * discount / 100
+    final_price = price - discount_amount
+    return final_price
+
+price = get_discounted_price(999, 20)
+
+print("Final Price:", price)
+
 4.
 Given a list of movie ratings (e.g., [4.5, 3.8, 5.0, 4.2]), write a function called average_rating that returns the average rating rounded to 1 decimal place. Print the result for the list above.
 Answer:
 
+def average_rating(ratings):
+    return round(sum(ratings) / len(ratings), 1)
+
+ratings = [4.5, 3.8, 5.0, 4.2]
+
+print(average_rating(ratings))
+
 5.
 Refactor the following code by moving the repeated logic into a function named is_even, which returns True if a number is even and False otherwise. Then, use this function to print all even numbers from 1 to 20.<br><br><em><strong>Hint:</strong> Use the modulus operator (%) to check for even numbers.</em>
 Answer:
+
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+
+for i in range(1, 21):
+    if is_even(i):
+        print(i)
