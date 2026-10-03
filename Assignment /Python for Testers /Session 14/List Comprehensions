@@ -1,0 +1,19 @@
+1.
+Create a list of the prices of 5 food items as integers, then use a list comprehension to generate a new list that adds 18% GST to each price and print the result.
+Answer:
+
+2.
+Given a list of usernames from an Instagram-like app, use a list comprehension to create a new list containing only those usernames that start with the letter 'a' or 'A'.
+Answer:
+
+3.
+Write a list comprehension that takes a list of cricket scores and produces a list of strings where each score above 50 is labeled as 'Half-century' and scores 50 or below are labeled as 'Below Fifty'.<br><br><em><strong>Hint:</strong> Use a conditional expression inside the list comprehension.</em>
+Answer:
+
+4.
+Given a nested list where each sublist contains the ratings (1-5) for a Zomato restaurant from different users, use a nested list comprehension to flatten the list and filter out all ratings below 3.
+Answer:
+
+5.
+Use ChatGPT or Copilot to help you write a list comprehension that, given a list of product names from Flipkart, returns a new list with the names in uppercase but only if the name is longer than 6 characters. Paste your prompt and the AI's suggested code along with your final working code.
+Answer:
