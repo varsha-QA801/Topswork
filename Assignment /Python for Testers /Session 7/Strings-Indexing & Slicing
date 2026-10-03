@@ -1,0 +1,19 @@
+1.
+Given the string 'Your Zomato order ID is: ZMT12345. Enjoy your meal!', extract only the order ID (e.g., 'ZMT12345') using string slicing and indexing.
+Answer:
+
+2.
+Take a user's Instagram handle (e.g., '@cool_user123') and display just the username part (without the '@') using string slicing.
+Answer:
+
+3.
+Combine a user's first name and last name into a single display name (e.g., 'Priya' and 'Shah' becomes 'Priya Shah') using string concatenation.
+Answer:
+
+4.
+Write a function that takes a Flipkart product title and returns the first 10 characters followed by '...' if the title is longer than 10 characters, otherwise returns the full title.<br><br><em><strong>Hint:</strong> Use string slicing and the len() function.</em>
+Answer:
+
+5.
+Given the string 'Paytm-Transaction: Rs.500 credited on 2024-06-18', extract the transaction amount ('Rs.500') and the date ('2024-06-18') using string indexing and slicing.<br><br><em><strong>Hint:</strong> Find the start and end positions of each part before slicing.</em>
+Answer:
