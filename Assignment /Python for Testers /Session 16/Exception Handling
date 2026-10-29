@@ -2,18 +2,72 @@
 Write a Python function check_cart_total that takes a list of item prices and returns the total. If any item price is negative, raise a ValueError with the message 'Invalid price in cart'.
 Answer:
 
+def check_cart_total(prices):
+    if any(price < 0 for price in prices):
+        raise ValueError("Invalid price in cart")
+    return sum(prices)
+
+print(check_cart_total([100, 200, 300]))
+
+
 2.
 Simulate a Flipkart-style product search: write a function search_products that takes a list of product names and a search term. If the search term is empty, raise an Exception with the message 'Search term required'; otherwise, return matching products.<br><br><em><strong>Hint:</strong> Use try-except to handle the exception and print a user-friendly message.</em>
 Answer:
+
+def search_products(products, search_term):
+    if search_term == "":
+        raise Exception("Search term required")
+
+    return [p for p in products if search_term.lower() in p.lower()]
+
+products = ["Mobile", "Laptop", "Headphones", "Mobile Cover"]
+
+try:
+    print(search_products(products, "mobile"))
+except Exception as e:
+    print("Error:", e)
+
 
 3.
 Given the following buggy code, fix it so that it handles division by zero and prints 'Cannot divide by zero' instead of crashing:<br><br>def calculate_discount(price, discount):<br> return price / discount<br>print(calculate_discount(1000, 0))<br><br><em><strong>Hint:</strong> Use try-except to catch ZeroDivisionError.</em>
 Answer:
 
+def calculate_discount(price, discount):
+    try:
+        return price / discount
+    except ZeroDivisionError:
+        return "Cannot divide by zero"
+
+print(calculate_discount(1000, 0))
+
+
 4.
 Build a function get_user_profile that takes a username and returns a fake profile dictionary. If the username is not found in a predefined list, handle the exception and print 'User not found on Instagram'.
 Answer:
 
+def get_user_profile(username):
+    users = ["varsha", "rahul", "amit"]
+
+    if username not in users:
+        raise Exception("User not found on Instagram")
+
+    return {"username": username, "followers": 1000}
+
+try:
+    print(get_user_profile("varsha"))
+except Exception as e:
+    print(e)
+
+
 5.
 Use ChatGPT or Copilot to generate a Python code snippet that reads a list of numbers from the user and prints their sum, but gracefully handles invalid (non-numeric) input using exception handling. Paste the code you got and mention which AI tool you used.
 Answer:
+
+try:
+    numbers = input("Enter numbers separated by spaces: ")
+    numbers = [int(n) for n in numbers.split()]
+
+    print("Sum:", sum(numbers))
+
+except ValueError:
+    print("Invalid input! Please enter numbers only.")
