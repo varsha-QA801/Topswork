@@ -2,6 +2,23 @@
 Create a Python file called math_helpers.py and define two functions: add_numbers(a, b) and multiply_numbers(a, b). Import these functions into another file called spotify_playlist.py and use them to calculate the total duration of two songs (in minutes) and the product of their play counts.
 Answer:
 
+math_helpers.py:
+def add_numbers(a, b):
+    return a + b
+
+def multiply_numbers(a, b):
+    return a * b
+
+
+spotify_playlist.py :
+from math_helpers import add_numbers, multiply_numbers
+
+duration = add_numbers(3, 4)
+plays = multiply_numbers(100, 200)
+
+print("Total Duration:", duration, "minutes")
+print("Total Play Counts:", plays)
+
 2.
 Organize a package folder named insta_utils with an __init__.py file and two modules: filters.py (define a function apply_bw_filter(image_name)) and stories.py (define a function add_story(username, image_name)). Import both functions into a new script called main_insta.py and call them with sample values.
 Answer:
@@ -10,10 +27,45 @@ Answer:
 Install the requests package using pip and write a script called fetch_trending_movies.py that fetches data from https://jsonplaceholder.typicode.com/posts and prints the titles of the first 3 posts.<br><br><em><strong>Hint:</strong> Use pip install requests in your terminal before running the script.</em>
 Answer:
 
+import requests
+
+url = "https://jsonplaceholder.typicode.com/posts"
+
+response = requests.get(url)
+data = response.json()
+
+for post in data[:3]:
+    print(post["title"])
+
 4.
 Refactor an existing script that has helper functions for formatting follower counts and post timestamps (e.g., format_follower_count, format_post_time) into a separate module called social_helpers.py, then import and use them in your main script for displaying formatted data like YouTube or Instagram.
 Answer:
 
+1. social_helpers.py
+def format_follower_count(count):
+    return str(count) + " followers"
+
+def format_post_time(time):
+    return str(time) + " hours ago"
+
+
+2. main.py
+from social_helpers import format_follower_count, format_post_time
+
+print(format_follower_count(5000))
+print(format_post_time(2))
+
+
 5.
 Use ChatGPT or GitHub Copilot to suggest a third-party Python package that can generate QR codes for payment links, then install the suggested package with pip and write a script called generate_qr.py that creates a QR code for a sample UPI payment link.<br><br><em><strong>Hint:</strong> Ask the AI tool for both the package name and a basic code example.</em>
 Answer:
+
+import qrcode
+
+upi_link = "upi://pay?pa=demo@upi&pn=TestUser&am=100&cu=INR"
+
+qr = qrcode.make(upi_link)
+qr.save("payment_qr.png")
+
+print("QR code generated successfully!")
+
