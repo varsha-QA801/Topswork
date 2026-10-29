@@ -2,14 +2,68 @@
 Create a Python class called Playlist that represents a music playlist with properties: name and songs (a list). Write a method add_song(song_name) to add a song to the playlist and print the updated list.
 Answer:
 
+class Playlist:
+    def __init__(self, name):
+        self.name = name
+        self.songs = []
+
+    def add_song(self, song_name):
+        self.songs.append(song_name)
+        print(self.songs)
+
+p = Playlist("My Playlist")
+p.add_song("Perfect")
+p.add_song("Shape of You")
+
+
 2.
 Build a Product class for a Flipkart-style shopping app with attributes: product_name, price, and rating. Add a display_details() method that prints all product details in a formatted way.
 Answer:
+
+class Product:
+    def __init__(self, product_name, price, rating):
+        self.product_name = product_name
+        self.price = price
+        self.rating = rating
+
+    def display_details(self):
+        print("Product Name:", self.product_name)
+        print("Price: ₹", self.price)
+        print("Rating:", self.rating, "/5")
+
+p = Product("Laptop", 45000, 4.5)
+p.display_details()
+
 
 3.
 Write a MovieTicket class that takes movie_name, seat_number, and price as properties. Add a method apply_discount(percent) that reduces the price by the given percent and prints the new price.<br><br><em><strong>Hint:</strong> Use self.price to update the price inside the method.</em>
 Answer:
 
+class MovieTicket:
+    def __init__(self, movie_name, seat_number, price):
+        self.movie_name = movie_name
+        self.seat_number = seat_number
+        self.price = price
+
+    def apply_discount(self, percent):
+        self.price = self.price - (self.price * percent / 100)
+        print("New Price:", self.price)
+
+
+ticket = MovieTicket("Avengers", "A10", 200)
+ticket.apply_discount(20)
+
+
 4.
 Given this code snippet: class User: def __init__(self, name): self.name = name def greet(self): print('Hi' + self.name) user1 = User('Amit') user1.greet() — Fix the code so that it prints 'Hi Amit' (with a space) instead of 'HiAmit'.
 Answer:
+
+class User:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print("Hi " + self.name)
+
+user1 = User("Amit")
+user1.greet()
